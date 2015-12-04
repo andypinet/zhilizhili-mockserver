@@ -1,0 +1,16 @@
+{
+  "apps": [{
+    "name": "zhilizhili-mockserver",
+    "script": "www/production.js",
+    "cwd": "/Users/lbc/Sites/zhilizhili-project/zhilizhili-mockserver",
+    "exec_mode": "cluster",
+    "instances": 0,
+    "max_memory_restart": "1G",
+    "autorestart": true,
+    "node_args": [],
+    "args": [],
+    "env": {
+      
+    }
+  }]
+}
