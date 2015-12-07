@@ -1,0 +1,157 @@
+@import "../../../../node_modules/sassstd/src/sassstd";
+@import "../../../../node_modules/sassyjson/stylesheets/SassyJSON";
+
+@import "../../../../node_modules/zhilizhili-ui/framework/sass/utils/full-parent";
+
+@import "../../../../node_modules/zhilizhili-ui/framework/sass/component/component";
+@import "../../../../node_modules/zhilizhili-ui/framework/sass/common/box";
+@import "../../../../node_modules/zhilizhili-ui/framework/sass/common/full-screen";
+@import "../../../../node_modules/zhilizhili-ui/framework/sass/common/reset";
+
+@import "../../../../node_modules/zhilizhili-ui/framework/sass/common/set-unit";
+@import "../../../../node_modules/zhilizhili-ui/framework/sass/common/center-set";
+
+@include use-border-box();
+@include full-screen();
+@include reset-body-marigin();
+
+
+$bgDefault: (
+        background-size: cover,
+        background-position: center center,
+        background-repeat: no-repeat
+) !global;
+
+$bgContain: (
+        background-size: contain,
+        background-position: center center,
+        background-repeat: no-repeat
+) !global;
+
+@mixin setBg($url, $interface)  {
+    background-image: url($url);
+    //background-color: #000000;
+    @each $key, $value in $interface {
+        #{$key}: #{$value};
+    }
+}
+
+@mixin default-setBg($url) {
+    @include setBg($url, $bgDefault);
+}
+
+@mixin easy-bg($folder, $name) {
+    //@include default-setBg("../../img/"+$folder+"/"+$name);
+    //background-attachment: fixed;
+}
+
+@mixin contain-setBg($url) {
+    @include setBg($url, $bgContain);
+}
+
+@mixin con-bg($folder, $name) {
+    @include contain-setBg("../../img/"+$folder+"/"+$name);
+}
+
+body {
+    overflow: hidden;
+}
+
+.items {
+    @extend %full-parent;
+    .item {
+        @extend %full-parent;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
+
+.item {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    .bg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+$index: 0;
+$debug: false;
+
+$color: #ea9a00;
+$setUnit-debug: false !global;
+
+$designWidth: 750;
+$designHeight: 1534;
+
+
+.logo {
+    width: 100%;
+    @include con-bg("success", "ok.png");
+    margin: 0 auto;
+}
+
+.text {
+    width: 100%;
+}
+
+.item {
+    text-align: center;
+    color: $color;
+}
+
+$polyfill: () !global;
+
+@mixin set-value($selector, $map: ()) {
+    $polyfill: map-deep-set($polyfill, $selector, $map) !global;
+    @each $key, $value in $map {
+        #{$key}: #{$value}
+    }
+}
+
+@mixin easy-set($map) {
+    @include set-value("#{&}", $map);
+}
+
+@mixin polyfill() {
+    .item1 {
+        .logo {
+            @include easy-set((
+                width: vw(225),
+                height: vw(225),
+                margin-top: vw(270)
+            ))
+        }
+        .text1 {
+            @include easy-set((
+                margin-top: vw(90)
+            ));
+            .p1 {
+                @include easy-set((
+                    font-size: vw(45)
+                ));
+            }
+            .p2 {
+                @include easy-set((
+                    margin-top: vw(37),
+                    font-size: vw(30)
+                ));
+            }
+        }
+    }
+}
+
+@include polyfill();
+
+@include json-encode($polyfill);

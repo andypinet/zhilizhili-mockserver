@@ -7,6 +7,14 @@
     <title>Document</title>
     <link rel="stylesheet" href="/static/css/ani/anicollection.min.css">
     <link rel="stylesheet" href="/static/css/ani/ani.css?v=<%=Math.random()*10%>">
+    <style>
+        .center-set:before {
+            content: none;
+        }
+        .btn {
+            border: 0;
+        }
+    </style>
 </head>
 <body>
     <div class="debug"></div>
@@ -280,7 +288,7 @@
                 <div class="list horizontal logos">
                     <div class="center-set">
                         <div class="center-set__item">
-                            <div class="btn">提交</div>
+                            <button class="btn" type="submit">提交</button>
                         </div>
                     </div>
                 </div>
