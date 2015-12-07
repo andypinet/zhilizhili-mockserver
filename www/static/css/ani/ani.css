@@ -503,14 +503,6 @@ body {
     height: 100%;
     vertical-align: middle; }
 
-.item {
-  display: none !important; }
-
-.item14 {
-  opacity: 1;
-  z-index: 1000 !important;
-  display: block !important; }
-
 .p {
   font-size: 4vw;
   margin-bottom: 3.12907vh;
