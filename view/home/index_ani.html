@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/css/ani/anicollection.min.css">
+    <link rel="stylesheet" href="/static/css/ani/ani.css?v=33">
+</head>
+<body>
+    <div class="debug"></div>
+    <div class="items">
+        <div class="item item1"
+             data-anijs="if: prevpage, on: .item2, do: fadeInDown animated;
+                         if: nextpage, on: .item1, do: fadeOutUp animated;" >
+            <div class="element center-block text1" data-anijs="if: load, on: body, do: fadeIn delay-100 animated;"></div>
+            <div class="element center-block text2" data-anijs="if: load, on: body, do: fadeIn delay-100 animated;"></div>
+            <div class="bg">
+                <img src="/static/img/1/1beijing.jpg" alt="">
+            </div>
+            <div class="mao" data-anijs="if: load, on: body, do: fadeInUp loop animated;"></div>
+        </div>
+        <div class="item item2"
+             data-anijs="if: prevpage, on: .item2, do: fadeOutDown animated;
+                         if: prevpage, on: .item3, do: fadeInDown animated;
+                         if: nextpage, on: .item1, do: fadeInUp top animated;
+                         if: nextpage, on: .item2, do: fadeOutUp animated;">
+            <div class="center-block intro1">
+                <div class="center-block__item logo1"></div>
+            </div>
+            <div class="intro2">
+                <div class="element center-block text1" data-anijs="if: load, on: .item2, do: slideInLeft animated;"></div>
+                <div class="element center-block text2" data-anijs="if: load, on: .item2, do: slideInRight animated;"></div>
+                <div class="element zhuazi1" data-anijs="if: load, on: .item2, do: fadeIn delay animated;"></div>
+                <div class="element zhuazi2" data-anijs="if: load, on: .item2, do: fadeIn delay animated;"></div>
+                <div class="element line"></div>
+            </div>
+            <div class="center-block intro3">
+                <div class="center-block__item logo2"></div>
+            </div>
+            <div class="mao" data-anijs="if: load, on: body, do: fadeInUp loop animated;"></div>
+        </div>
+        <div class="item item3"
+        data-anijs="                             if: prevpage, on: .item3, do: fadeOutDown animated;
+                             if: prevpage, on: .item4, do: fadeInDown animated;
+                             if: nextpage, on: .item2, do: fadeInUp top animated;
+                             if: nextpage, on: .item3, do: fadeOutUp animated;">
+            <div class="center-block intro1">
+                <div class="center-block__item logo1"></div>
+            </div>
+            <div class="intro2">
+                <div class="element center-block text1" data-anijs="if: load, on: .item3, do: slideInLeft animated;"></div>
+                <div class="element center-block text2" data-anijs="if: load, on: .item3, do: slideInRight animated;"></div>
+                <div class="element zhuazi1" data-anijs="if: load, on: .item3, do: fadeIn delay animated;"></div>
+                <div class="element zhuazi2" data-anijs="if: load, on: .item3, do: fadeIn delay animated;"></div>
+                <div class="element line"></div>
+            </div>
+            <div class="center-block intro3">
+                <div class="center-block__item logo2"></div>
+            </div>
+            <div class="mao" data-anijs="if: load, on: body, do: fadeInUp loop animated;"></div>
+        </div>
+        <div class="item item4"
+        data-anijs="if: prevpage, on: .item4, do: fadeOutDown animated;
+                             if: prevpage, on: .item5, do: fadeInDown animated;
+                             if: nextpage, on: .item3, do: fadeInUp top animated;
+                             if: nextpage, on: .item4, do: fadeOutUp animated;">
+            <div class="center-block intro1">
+                <div class="center-block__item logo1"></div>
+            </div>
+            <div class="intro2">
+                <div class="element center-block text1" data-anijs="if: load, on: .item4, do: slideInLeft animated;"></div>
+                <div class="element center-block text2" data-anijs="if: load, on: .item4, do: slideInRight animated;"></div>
+                <div class="element zhuazi1" data-anijs="if: load, on: .item4, do: fadeIn delay animated;"></div>
+                <div class="element zhuazi2" data-anijs="if: load, on: .item4, do: fadeIn delay animated;"></div>
+                <div class="element line"></div>
+            </div>
+            <div class="center-block intro3">
+                <div class="center-block__item logo2"></div>
+            </div>
+            <div class="mao" data-anijs="if: load, on: body, do: fadeInUp loop animated;"></div>
+        </div>
+        <div class="item item5"
+        data-anijs="if: prevpage, on: .item5, do: fadeOutDown animated;
+                             if: prevpage, on: .item6, do: fadeInDown animated;
+                             if: nextpage, on: .item4, do: fadeInUp top animated;
+                             if: nextpage, on: .item5, do: fadeOutUp animated;">
+            <div class="element center-block text1" data-anijs="if: load, on: .item5, do: slideInDown animated;"></div>
+            <div class="element center-block text2" data-anijs="if: load, on: .item5, do: slideInUp animated;"></div>
+            <div class="element zhuazi" data-anijs="if: load, on: .item5, do: slideInUp animated;"></div>
+            <div class="bg">
+                <img src="/static/img/5/5beijing.jpg" alt="">
+            </div>
+            <div class="mao" data-anijs="if: load, on: body, do: fadeInUp loop animated;"></div>
+        </div>
+        <div class="item item6"
+        data-anijs="if: prevpage, on: .item6, do: fadeOutDown animated;
+                             if: prevpage, on: .item7, do: fadeInDown animated;
+                             if: nextpage, on: .item5, do: fadeInUp top animated;
+                             if: nextpage, on: .item6, do: fadeOutUp animated;">
+            <div class="element center-block text1" data-anijs="if: load, on: .item6, do: slideInDown animated;"></div>
+            <div class="element center-block text2" data-anijs="if: load, on: .item6, do: slideInUp animated;"></div>
+            <div class="element zhuazi" data-anijs="if: load, on: .item6, do: slideInDown animated;"></div>
+            <div class="bg">
+                <img src="/static/img/common/12beijing.jpg" alt="">
+            </div>
+            <div class="mao" data-anijs="if: load, on: body, do: fadeInUp loop animated;"></div>
+        </div>
+        <div class="item item7"
+        data-anijs="if: prevpage, on: .item7, do: fadeOutDown animated;
+                             if: prevpage, on: .item8, do: fadeInDown animated;
+                             if: nextpage, on: .item6, do: fadeInUp top animated;
+                             if: nextpage, on: .item7, do: fadeOutUp animated;">
+            <div class="element center-block text1" data-anijs="if: load, on: .item7, do: fadeIn animated;"></div>
+            <div class="element center-block text2" data-anijs="if: load, on: .item7, do: fadeIn delay-300 animated;"></div>
+            <div class="bg">
+                <img src="/static/img/common/12beijing.jpg" alt="">
+            </div>
+            <div class="mao" data-anijs="if: load, on: body, do: fadeInUp loop animated;"></div>
+        </div>
+        <div class="item item8"
+        data-anijs="if: prevpage, on: .item8, do: fadeOutDown animated;
+                             if: prevpage, on: .item9, do: fadeInDown animated;
+                             if: nextpage, on: .item7, do: fadeInUp top animated;
+                             if: nextpage, on: .item8, do: fadeOutUp animated;">
+            <div class="element center-block text1">
+                <div class="center-block__item logo" data-anijs="if: load, on: .item8, do: fadeIn animated;"></div>
+                <div class="intro">
+                    <div class="p p1" data-anijs="if: load, on: .item8, do: fadeIn delay-100 ani-duration1000 animated;">总有人不忍它们在寒风中流浪</div>
+                    <div class="p p2" data-anijs="if: load, on: .item8, do: fadeIn delay-200 ani-duration1000 animated;">总有人想让这个世界越来越好</div>
+                    <div class="p p3" data-anijs="if: load, on: .item8, do: fadeIn delay-300 ani-duration1000 animated;">而爱，会让我们都更美好</div>
+                    <div class="p p4" data-anijs="if: load, on: .item8, do: fadeIn delay-500 ani-duration1000 animated;">12月9日，猫史·咖啡</div>
+                    <div class="p p5" data-anijs="if: load, on: .item8, do: fadeIn delay-700 ani-duration1000 animated;">在二十多只猫咪的陪伴下</div>
+                    <div class="p p6" data-anijs="if: load, on: .item8, do: fadeIn delay-800 ani-duration1000 animated;">邀您来一起聆听这些小可爱的故事</div>
+                </div>
+            </div>
+            <div class="bg">
+                <img src="/static/img/common/12beijing.jpg" alt="">
+            </div>
+            <div class="mao" data-anijs="if: load, on: body, do: fadeInUp loop animated;"></div>
+        </div>
+        <div class="item item9"
+        data-anijs="if: prevpage, on: .item9, do: fadeOutDown animated;
+                             if: prevpage, on: .item10, do: fadeInDown animated;
+                             if: nextpage, on: .item8, do: fadeInUp top animated;
+                             if: nextpage, on: .item9, do: fadeOutUp animated;">
+            <div class="element center-block text1">
+                <div class="center-block__item logo" data-anijs="if: load, on: .item9, do: zoomIn animated;"></div>
+                <div class="intro">
+                    <div class="p p1" data-anijs="if: load, on: .item9, do: fadeIn delay-300 animated;">田园猫，江湖猫称<strong>黄二傻</strong>，咖啡店第一</div>
+                    <div class="p p2" data-anijs="if: load, on: .item9, do: fadeIn delay-300 animated;">掌柜，身兼保安、保姆、奶妈、保镖、模特等</div>
+                    <div class="p p3" data-anijs="if: load, on: .item9, do: fadeIn delay-300 animated;">数职。曾经流浪街头如今定居打豆豆咖啡厅，</div>
+                    <div class="p p4" data-anijs="if: load, on: .item9, do: fadeIn delay-300 animated;">外表无辜迷人，内里聪慧过人，会溜自己会开</div>
+                    <div class="p p5" data-anijs="if: load, on: .item9, do: fadeIn delay-300 animated;">门，偶尔客串咖啡屋保安队长站岗放哨~</div>
+                </div>
+            </div>
+            <div class="bg">
+                <img src="/static/img/common/12beijing.jpg" alt="">
+            </div>
+            <div class="mao" data-anijs="if: load, on: body, do: fadeInUp loop animated;"></div>
+        </div>
+        <div class="item item10"
+        data-anijs="if: prevpage, on: .item10, do: fadeOutDown animated;
+                             if: prevpage, on: .item11, do: fadeInDown animated;
+                             if: nextpage, on: .item9, do: fadeInUp top animated;
+                             if: nextpage, on: .item10, do: fadeOutUp animated;">
+            <div class="element center-block text1">
+                <div class="center-block__item logo" data-anijs="if: load, on: .item10, do: zoomIn animated;"></div>
+                <div class="intro">
+                    <div class="p p1" data-anijs="if: load, on: .item10, do: fadeIn delay-300 animated;">打豆豆咖啡屋猫界女神担当<strong>陈小雪</strong>，长</div>
+                    <div class="p p2" data-anijs="if: load, on: .item10, do: fadeIn delay-300 animated;">毛田园猫，雪白的皮毛湛蓝的眼睛，当之无愧</div>
+                    <div class="p p3" data-anijs="if: load, on: .item10, do: fadeIn delay-300 animated;">的第一女神，同时也是店内的高冷担当，其实</div>
+                    <div class="p p4" data-anijs="if: load, on: .item10, do: fadeIn delay-300 animated;">是因为女神天生耳聋，有人从背后摸它时会很</div>
+                    <div class="p p5" data-anijs="if: load, on: .item10, do: fadeIn delay-300 animated;">惊慌，正面接近女神还是很亲人哒~</div>
+                </div>
+            </div>
+            <div class="bg">
+                <img src="/static/img/common/12beijing.jpg" alt="">
+            </div>
+            <div class="mao" data-anijs="if: load, on: body, do: fadeInUp loop animated;"></div>
+        </div>
+        <div class="item item11"
+        data-anijs="if: prevpage, on: .item11, do: fadeOutDown animated;
+                             if: prevpage, on: .item12, do: fadeInDown animated;
+                             if: nextpage, on: .item10, do: fadeInUp top animated;
+                             if: nextpage, on: .item11, do: fadeOutUp animated;">
+            <div class="element center-block text1">
+                <div class="center-block__item logo" data-anijs="if: load, on: .item11, do: zoomIn animated;"></div>
+                <div class="intro">
+                    <div class="p p1" data-anijs="if: load, on: .item11, do: fadeIn delay-300 animated;">打豆豆猫咪主题咖啡厅众猫厅长，<strong>豆豆</strong></div>
+                    <div class="p p2" data-anijs="if: load, on: .item11, do: fadeIn delay-300 animated;">(不能用来打），吃饭睡觉打豆豆咖啡厅创办</div>
+                    <div class="p p3" data-anijs="if: load, on: .item11, do: fadeIn delay-300 animated;">人，这是一个主要以猫咪为主题的咖啡馆，在</div>
+                    <div class="p p4" data-anijs="if: load, on: .item11, do: fadeIn delay-300 animated;">这里，猫咪是主体，是否拥有金钱，拥有权力</div>
+                    <div class="p p5" data-anijs="if: load, on: .item11, do: fadeIn delay-300 animated;">对它们来说都不重要，所有人都是平等的，在</div>
+                    <div class="p p6" data-anijs="if: load, on: .item11, do: fadeIn delay-300 animated;">这里你可以喝咖啡，也可以和猫咪一起玩耍缓</div>
+                    <div class="p p7" data-anijs="if: load, on: .item11, do: fadeIn delay-300 animated;">解压力和孤独。如果你有能力，可以在这里认</div>
+                    <div class="p p8" data-anijs="if: load, on: .item11, do: fadeIn delay-300 animated;">养一只你喜欢的猫咪！</div>
+                </div>
+            </div>
+            <div class="bg">
+                <img src="/static/img/common/12beijing.jpg" alt="">
+            </div>
+            <div class="mao" data-anijs="if: load, on: body, do: fadeInUp loop animated;"></div>
+        </div>
+        <div class="item item12"
+        data-anijs="if: prevpage, on: .item12, do: fadeOutDown animated;
+                             if: prevpage, on: .item13, do: fadeInDown animated;
+                             if: nextpage, on: .item11, do: fadeInUp top animated;
+                             if: nextpage, on: .item12, do: fadeOutUp animated;">
+            <div class="intro1">
+                <div class="p p1" data-anijs="if: load, on: .item12, do: fadeIn delay-100 animated;">南京信息工程大学创行团队"阿福和它的朋友们"</div>
+                <div class="p p2" data-anijs="if: load, on: .item12, do: fadeIn delay-100 animated;">是一群热爱公益的大学生，致力于流浪猫狗关爱</div>
+                <div class="p p3" data-anijs="if: load, on: .item12, do: fadeIn delay-100 animated;">行动，希望能够让身边人更多的关注流浪猫狗,</div>
+                <div class="p p4" data-anijs="if: load, on: .item12, do: fadeIn delay-100 animated;">给流浪的猫咪们和狗狗一个温暖的居处。</div>
+            </div>
+            <div class="intro2">
+                <div class="p p1" data-anijs="if: load, on: .item12, do: fadeIn delay-300 animated;"><b>上镜</b>是一款主打生活分享的在线分享平台，把</div>
+                <div class="p p2" data-anijs="if: load, on: .item12, do: fadeIn delay-300 animated;">你听到的这些故事分享给你身边的朋友，让更多</div>
+                <div class="p p3" data-anijs="if: load, on: .item12, do: fadeIn delay-300 animated;">的人关注流浪猫。<b>使用上镜APP分享，</b></div>
+                <div class="p p4" data-anijs="if: load, on: .item12, do: fadeIn delay-300 animated;"><b>店内消费<strong>9</strong>折。</b></div>
+            </div>
+            <div class="list horizontal logos">
+                <div class="list__item logo1" data-anijs="if: load, on: .item12, do: fadeInLeft animated;"></div>
+                <div class="list__item logo2" data-anijs="if: load, on: .item12, do: fadeInRight animated;"></div>
+            </div>
+            <div class="bg">
+                <img src="/static/img/common/12beijing.jpg" alt="">
+            </div>
+            <div class="mao" data-anijs="if: load, on: body, do: fadeInUp loop animated;"></div>
+        </div>
+        <div class="item item13"
+        data-anijs="if: prevpage, on: .item13, do: fadeOutDown animated;
+                             if: prevpage, on: .item14, do: fadeInDown animated;
+                             if: nextpage, on: .item12, do: fadeInUp top animated;
+                             if: nextpage, on: .item13, do: fadeOutUp animated;">
+            <div class="intro1">
+                <div class="p p1" data-anijs="if: load, on: .item13, do: fadeIn ani-duration700 animated;">活动组织：上镜&南京信息工程大学创行团队</div>
+                <div class="p p2" data-anijs="if: load, on: .item13, do: fadeIn ani-duration700 animated;"><div class="holder"></div>&打豆豆猫咪主题咖啡厅</div>
+                <div class="p p3" data-anijs="if: load, on: .item13, do: fadeIn delay-100 ani-duration700 animated;">活动时间：<span class="light">12月9日下午13：00-15:00</span></div>
+                <div class="p p4" data-anijs="if: load, on: .item13, do: fadeIn delay-200 ani-duration700 animated;">活动地点：<span class="light">打豆豆猫咪主题咖啡厅（宁海路)</span></div>
+                <div class="p p5" data-anijs="if: load, on: .item13, do: fadeIn delay-300 ani-duration700 animated;">活动内容：1.参与者参观咖啡馆并与猫咪互动</div>
+                <div class="p p6" data-anijs="if: load, on: .item13, do: fadeIn delay-300 ani-duration700 animated;"><div class="holder"></div>2.店长向大家介绍猫咪的故事</div>
+                <div class="p p7" data-anijs="if: load, on: .item13, do: fadeIn delay-300 ani-duration700 animated;"><div class="holder"></div>3.双方交流互动，做进一步的了解</div>
+                <div class="p p8" data-anijs="if: load, on: .item13, do: fadeIn delay-300 ani-duration700 animated;"><div class="holder"></div>4.全体参与者拍照留影</div>
+                <div class="p p9" data-anijs="if: load, on: .item13, do: fadeIn delay-400 ani-duration700 animated;">活动人数：<span class="light">20人</span></div>
+                <div class="p p10" data-anijs="if: load, on: .item13, do: fadeIn delay-500 ani-duration700 animated;">报名方式：点击“报名”按钮进入报名页面，填</div>
+                <div class="p p11" data-anijs="if: load, on: .item13, do: fadeIn delay-500 ani-duration700 animated;">写相关信息进行报名，我们将会邀请20位朋友</div>
+                <div class="p p12" data-anijs="if: load, on: .item13, do: fadeIn delay-500 ani-duration700 animated;">参与到活动中来（注：在咖啡店内消费自费)</div>
+            </div>
+            <div class="list horizontal logos">
+                <div class="center-set">
+                    <div class="center-set__item">
+                        <div id="next" class="btn">报名</div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg">
+                <img src="/static/img/common/12beijing.jpg" alt="">
+            </div>
+        </div>
+        <div class="item item14"
+        data-anijs="if: prevpage, on: .item14, do: fadeOutDown animated;
+                             if: nextpage, on: .item13, do: fadeInUp top animated;">
+            <form action="">
+                <div class="intro1">
+                    <div class="p p1">
+                        <input type="text" placeholder="请输入你的姓名">
+                    </div>
+                    <div class="p p2">
+                        <input type="text" placeholder="请输入你的微信号">
+                    </div>
+                    <div class="p p3">
+                        <input type="text" placeholder="请输入你的手机号">
+                    </div>
+                    <div class="p p4">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="写点你想对猫咪说的话吧 ..."></textarea>
+                    </div>
+                </div>
+                <div class="list horizontal logos">
+                    <div class="center-set">
+                        <div class="center-set__item">
+                            <div class="btn">提交</div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="bg">
+                <img src="/static/img/common/12beijing.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/static/js/ani/hammer.min.js"></script>
+<script src="/static/js/ani/anijs.min.js"></script>
+<script>
+    var debug = (window.getComputedStyle(
+            document.querySelector('.debug')
+    ).fontFamily) == "true";
+    if (!debug) {
+        var content = window.getComputedStyle(
+                document.querySelector('head')
+        ).fontFamily.replace(/\\/g, "").replace(/'/g, '');
+
+        var viewportwidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+        var viewportheight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+
+        function rel(propval, unit) {
+            return parseFloat(propval.replace(unit, ""));
+        }
+
+        function cal(propval) {
+            if (typeof propval != "string") {
+                return propval;
+            }
+
+            if (propval.indexOf('vw') > -1) {
+                return viewportwidth * rel(propval, "vw") / 100 + "px";
+            } else if (propval.indexOf('vh') > -1) {
+                return viewportheight * rel(propval, "vh") / 100 + "px";
+            } else {
+                return propval;
+            }
+        }
+
+        function setVwStyle(ele, cssprops) {
+            for (var csspropkey in cssprops) {
+                ele.style[csspropkey] = cal(cssprops[csspropkey]);
+            }
+        }
+
+        var parseobj = ( new Function( 'return (' + content + ');' ) )();
+
+        for (var key in parseobj) {
+            var elements = Array.prototype.slice.call(document.querySelectorAll(key));
+            if (elements) {
+                for (var i = 0; i < elements.length; i++) {
+                    console.dir(elements[i]);
+                    setVwStyle(elements[i], parseobj[key]);
+                }
+            }
+        }
+    }
+</script>
+<script>
+    var loadEvent = new CustomEvent('load', { });
+    var prevPageEvent = new CustomEvent('prevpage', { });
+    var nextPageEvent = new CustomEvent('nextpage', { });
+    var elements = Array.prototype.slice.call(document.querySelectorAll(".item"));
+
+    var currentIndex = 0;
+    var hammertime = new Hammer(document.querySelector("body"), {
+
+    });
+
+    function hide(elements, currentIndex) {
+        for(var i = 0; i < elements.length; i++) {
+            if (i != currentIndex) {
+                elements[i].style.display = "none";
+            }
+        }
+    }
+
+    hide(elements, -1);
+    elements[0].style.display = "block";
+
+    document.body.dispatchEvent(loadEvent);
+//    elements[12].dispatchEvent(loadEvent);
+
+    function removeAni(index) {
+        setTimeout(function() {
+            elements[index].classList.remove("fadeOutUp");
+            elements[index].classList.remove("animated");
+            elements[index].style.display = "none";
+        }, 1000);
+    }
+
+    function prevAni(index) {
+        elements[index].classList.add("fadeInDown");
+        elements[index].classList.add("animated");
+        elements[index].style.display = "block";
+    }
+
+    function delayHide(index) {
+        setTimeout(function() {
+            elements[index].style.display = "none";
+        }, 1000);
+    }
+
+    hammertime.get('swipe').set({ direction: Hammer.DIRECTION_VERTICAL });
+    hammertime.on('swipedown', function(ev) {
+        if (currentIndex > 0) {
+//            elements[currentIndex].dispatchEvent(prevPageEvent);
+            prevAni(currentIndex - 1);
+            elements[currentIndex].classList.add("fadeOut");
+            elements[currentIndex].classList.add("animated");
+            delayHide(currentIndex);
+            currentIndex--;
+        }
+    });
+    hammertime.on('swipeup', function(ev) {
+//        elements[currentIndex].dispatchEvent(nextPageEvent);
+//            elements[currentIndex].style.display = "none";
+        if (currentIndex < 13)  {
+            currentIndex++;
+            elements[currentIndex - 1].classList.add("fadeOutUp");
+            elements[currentIndex - 1].classList.add("animated");
+            removeAni(currentIndex - 1);
+            elements[currentIndex].dispatchEvent(loadEvent);
+            elements[currentIndex].style.display = "block";
+            elements[currentIndex].classList.remove("fadeOut");
+            elements[currentIndex].classList.add("fadeIn");
+            elements[currentIndex].classList.add("animated");
+        }
+    });
+    document.querySelector("#next").addEventListener("click", function(){
+        if (currentIndex < 13)  {
+//            elements[currentIndex].dispatchEvent(nextPageEvent);
+            currentIndex++;
+            elements[currentIndex - 1].classList.add("fadeOutUp");
+            elements[currentIndex - 1].classList.add("animated");
+            removeAni(currentIndex - 1);
+            elements[currentIndex].style.display = "block";
+            elements[currentIndex].classList.remove("fadeOut");
+            elements[currentIndex].classList.add("fadeIn");
+            elements[currentIndex].classList.add("animated");
+        }
+    });
+</script>
+</html>

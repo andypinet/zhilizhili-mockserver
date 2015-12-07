@@ -1,0 +1,1005 @@
+@import "../../../../node_modules/sassstd/src/sassstd";
+@import "../../../../node_modules/sassyjson/stylesheets/SassyJSON";
+
+@import "../../../../node_modules/zhilizhili-ui/framework/sass/utils/full-parent";
+
+@import "../../../../node_modules/zhilizhili-ui/framework/sass/component/component";
+@import "../../../../node_modules/zhilizhili-ui/framework/sass/common/box";
+@import "../../../../node_modules/zhilizhili-ui/framework/sass/common/full-screen";
+@import "../../../../node_modules/zhilizhili-ui/framework/sass/common/reset";
+
+@import "../../../../node_modules/zhilizhili-ui/framework/sass/common/set-unit";
+@import "../../../../node_modules/zhilizhili-ui/framework/sass/common/center-set";
+
+@include use-border-box();
+@include full-screen();
+@include reset-body-marigin();
+
+.center-set {
+    text-align: center;
+    @include center-nav(".center-set__item");
+}
+
+body {
+    overflow: hidden;
+}
+
+@mixin setDebug($i) {
+    .item {
+        display: none !important;
+    }
+    .item#{$i} {
+        opacity: 1;
+        z-index: 1000 !important;
+        display: block !important;
+    }
+}
+
+.center-block {
+    width: 100%;
+    &__item {
+        display: block;
+        margin: 0 auto;
+    }
+}
+// center-block
+
+$bgDefault: (
+        background-size: cover,
+        background-position: center center,
+        background-repeat: no-repeat
+) !global;
+
+$bgContain: (
+        background-size: contain,
+        background-position: center center,
+        background-repeat: no-repeat
+) !global;
+
+@mixin setBg($url, $interface)  {
+    background-image: url($url);
+    //background-color: #000000;
+    @each $key, $value in $interface {
+        #{$key}: #{$value};
+    }
+}
+
+@mixin default-setBg($url) {
+    @include setBg($url, $bgDefault);
+}
+
+@mixin easy-bg($folder, $name) {
+    //@include default-setBg("../../img/"+$folder+"/"+$name);
+    //background-attachment: fixed;
+}
+
+@mixin contain-setBg($url) {
+    @include setBg($url, $bgContain);
+}
+
+@mixin con-bg($folder, $name) {
+    @include contain-setBg("../../img/"+$folder+"/"+$name);
+}
+// bg
+
+.list {
+    width: 100%;
+}
+
+.list.horizontal {
+    .list__item {
+        display: inline-block;
+    }
+}
+
+
+$index: 0;
+$debug: false;
+$setUnit-debug: false !global;
+
+$designWidth: 750;
+$designHeight: 1534;
+
+$color: #ea9a00;
+
+.debug {
+    font-family: $debug;
+}
+
+.top {
+    z-index: 15 !important;
+}
+
+.item {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    .bg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.delay {
+    animation-delay: 1s;
+}
+
+.loop {
+    animation-iteration-count: infinite;
+    animation-duration: 1.5s;
+}
+
+@for $i from 1 through 10 {
+    .delay-#{$i*100} {
+        animation-delay: ($i*100*2) + 0ms;
+    }
+}
+
+@for $i from 1 through 10 {
+    .ani-duration#{$i*100} {
+        animation-duration: ($i*100*2) + 0ms;
+    }
+}
+
+@for $i from 1 through 14 {
+    .item#{$i} {
+        z-index: 14 - $i;
+    }
+}
+
+@include component("items") {
+    .element {
+        position: absolute;
+    }
+    .p {
+        color: #ffffff;
+        strong {
+            font-style: italic;
+            position: relative;
+            &:before {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: -6px;
+                width: 100%;
+                border-bottom: 1px solid #ffffff;
+            }
+        }
+        b {
+            strong {
+                color: $color;
+                margin-left: 5px;
+                margin-right: 5px;
+                &:before {
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+    .holder {
+        display: block;
+        height: 1px;
+        float: left;
+    }
+    .light {
+        color: $color;
+    }
+    .items {
+        @extend %full-parent;
+        color: $color;
+        .item {
+            @extend %full-parent;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    }
+    .item {
+        //opacity: 0;
+    }
+    .mao {
+        @include con-bg("1", "1_11.png");
+        position: absolute;
+        left: 0;
+        top: auto;
+        right: 0;
+        margin: auto;
+    }
+    .item1 {
+        .text1 {
+            @include con-bg("1", "1_03.png");
+            opacity: 0;
+        }
+        .text2 {
+            @include con-bg("1", "1_06.png");
+            opacity: 0;
+        }
+    }
+    .item2 {
+        .logo1 {
+            width: 100%;
+            @include con-bg("2", "2_01.png");
+            background-position: top left;
+        }
+        .logo2 {
+            width: 100%;
+            @include con-bg("2", "2_21.png");
+        }
+        .text1 {
+            @include con-bg("2", "2-zi-1.png");
+        }
+        .text2 {
+            @include con-bg("2", "2-zi.png");
+        }
+        .zhuazi1 {
+            @include con-bg("2", "zhu1.png");
+            opacity: 0;
+        }
+        .zhuazi2 {
+            @include con-bg("2", "zhua2.png");
+            opacity: 0;
+        }
+        .line {
+            @include con-bg("2", "2-xian.png");
+        }
+    }
+    .item3 {
+        .logo1 {
+            width: 100%;
+            @include con-bg("3", "3_02.png");
+            background-position: top left;
+        }
+        .logo2 {
+            width: 100%;
+            @include con-bg("3", "3_14.png");
+        }
+        .text1 {
+            @include con-bg("3", "3_06.png");
+        }
+        .text2 {
+            @include con-bg("3", "3_10.png");
+        }
+        .zhuazi1 {
+            @include con-bg("2", "zhu1.png");
+        }
+        .zhuazi2 {
+            @include con-bg("2", "zhua2.png");
+        }
+        .line {
+            @include con-bg("2", "2-xian.png");
+        }
+    }
+    .item4 {
+        .logo1 {
+            @include con-bg("4", "4_03.png");
+        }
+        .logo2 {
+            @include con-bg("4", "4_15.png");
+        }
+        .text1 {
+            @include con-bg("4", "4_07.png");
+        }
+        .text2 {
+            @include con-bg("4", "4_11.png");
+        }
+        .zhuazi1 {
+            @include con-bg("2", "zhu1.png");
+        }
+        .zhuazi2 {
+            @include con-bg("2", "zhua2.png");
+        }
+        .line {
+            @include con-bg("2", "2-xian.png");
+        }
+    }
+    .item5 {
+        @include easy-bg("5", "5beijing.jpg");
+        .text1 {
+            @include con-bg("5", "zi1.png");
+        }
+        .text2 {
+            @include con-bg("5", "zi.png");
+        }
+        .zhuazi {
+            @include con-bg("5", "zhua5.png");
+        }
+    }
+    .item6 {
+        @include easy-bg("6", "6beijing.jpg");
+        .text1 {
+            @include con-bg("6", "zi.png");
+        }
+        .text2 {
+            @include con-bg("6", "zi2.png");
+        }
+        .zhuazi {
+            @include con-bg("6", "zhua6.png");
+        }
+    }
+    .item7 {
+        @include easy-bg("7", "beijing.jpg");
+        .text1 {
+            @include con-bg("7", "zi2.png");
+        }
+        .text2 {
+            @include con-bg("7", "zi.png");
+        }
+    }
+    .item8 {
+        @include easy-bg("common", "12beijing.jpg");
+        .p {
+            text-align: center;
+        }
+        .logo {
+            @include con-bg("8", "8_03.png");
+        }
+    }
+    .item9 {
+        @include easy-bg("common", "12beijing.jpg");
+        .logo {
+            @include con-bg("9", "touxiang.png");
+        }
+    }
+    .item10 {
+        @include easy-bg("common", "12beijing.jpg");
+        .logo {
+            @include con-bg("10", "touxiang.png");
+        }
+
+    }
+    .item11 {
+        @include easy-bg("common", "12beijing.jpg");
+        .logo {
+            @include con-bg("11", "touxiang.png");
+        }
+    }
+    .item12 {
+        @include easy-bg("common", "12beijing.jpg");
+        .logos {
+            position: relative;
+        }
+        .logo1 {
+            position: absolute;
+            top: 0;
+            @include con-bg("12", "12_03.png");
+            background-position: center bottom;
+        }
+        .logo2 {
+            position: absolute;
+            top: 0;
+            @include con-bg("12", "12_05.png");
+            background-position: center bottom;
+        }
+    }
+    .item13 {
+        @include easy-bg("common", "12beijing.jpg");
+        .btn {
+            display: block;
+            color: #ffffff;
+            background-color: $color;
+            text-align: center;
+            &:before {
+                content: "";
+                display: inline-block;
+                height: 100%;
+                vertical-align: middle;
+            }
+        }
+    }
+    .item14 {
+        @include easy-bg("common", "12beijing.jpg");
+        input {
+            width: 100%;
+            background-color: transparent;
+            border: 1px solid $color;
+            &::-webkit-input-placeholder {
+                color: $color;
+            }
+        }
+        textarea {
+            width: 100%;
+            background-color: transparent;
+            border: 1px solid $color;
+            &::-webkit-input-placeholder {
+                color: $color;
+            }
+        }
+        .btn {
+            display: block;
+            color: #ffffff;
+            background-color: $color;
+            text-align: center;
+            &:before {
+                content: "";
+                display: inline-block;
+                height: 100%;
+                vertical-align: middle;
+            }
+        }
+    }
+}
+
+//@include setDebug(13);
+
+$polyfill: () !global;
+
+@mixin set-value($selector, $map: ()) {
+    $polyfill: map-deep-set($polyfill, $selector, $map) !global;
+    @each $key, $value in $map {
+        #{$key}: #{$value}
+    }
+}
+
+@mixin easy-set($map) {
+    @include set-value("#{&}", $map);
+}
+
+@mixin size($width, $height) {
+    width: vw($width);
+    height: vh($height);
+}
+
+@mixin polyfill() {
+    .p {
+        strong {
+            @include easy-set((
+                font-size: vw(42)
+            ))
+        }
+        b {
+            @include easy-set((
+                font-size: vw(42)
+            ))
+        }
+        b {
+            strong {
+                @include easy-set((
+                    font-size: vw(56)
+                ))
+            }
+        }
+        @include easy-set((
+            font-size: vw(30),
+            margin-bottom: vh(48),
+            padding-left: vw(70),
+            padding-right: vw(70)
+        ));
+    }
+    .list {
+        @include easy-set((
+            padding-left: vw(70),
+            padding-right: vw(70)
+        ));
+    }
+    .holder {
+        @include easy-set((
+            width: vw(154)
+        ));
+    }
+    .mao {
+        @include easy-set((
+            width: vw(70),
+            height: vw(70),
+            bottom: vw(70)
+        ));
+    }
+    .item1 {
+        .text1 {
+            @include easy-set((
+                    width: vw(70),
+                    height: vw(200),
+                    top: vh(89),
+                    left: vw(526)
+            ));
+        }
+        .text2 {
+            @include easy-set((
+                    width: vw(68),
+                    height: vw(405),
+                    top: vh(119),
+                    left: vw(625)
+            ));
+        }
+    }
+    .item2 {
+        .intro1 {
+            @include easy-set((
+                    height: vw(450),
+                    margin-top: vw(58)
+            ));
+        }
+        .intro2 {
+            @include easy-set((
+                    height: vw(174),
+                    margin-top: vw(44)
+            ));
+        }
+        .intro3 {
+            @include easy-set((
+                    height: vw(450),
+                    margin-top: vw(12)
+            ));
+        }
+        .logo1 {
+            @include easy-set((
+                    width: vw(450),
+                    height: vw(450)
+            ));
+        }
+        .logo2 {
+            @include easy-set((
+                    width: vw(450),
+                    height: vw(450)
+            ));
+        }
+        .text1 {
+            @include easy-set((
+                    width: vw(392),
+                    height: vw(55),
+                    left: vw(95),
+                    top: vw(547)
+            ));
+        }
+        .text2 {
+            @include easy-set((
+                    width: vw(424),
+                    height: vw(60),
+                    left: vw(227),
+                    top: vw(607)
+            ));
+        }
+        .zhuazi1 {
+            @include easy-set((
+                    width: vw(58),
+                    height: vw(50),
+                    left: vw(29),
+                    top: vw(556)
+            ));
+        }
+        .zhuazi2 {
+            @include easy-set((
+                    width: vw(58),
+                    height: vw(50),
+                    left: vw(632),
+                    top: vw(613)
+            ));
+        }
+        .line {
+            @include easy-set((
+                    width: vw(694),
+                    height: vw(79),
+                    left: vw(31),
+                    top: vw(652)
+            ));
+        }
+    }
+    .item3 {
+        .intro1 {
+            @include easy-set((
+                    height: vw(450),
+                    margin-top: vw(58)
+            ));
+        }
+        .intro2 {
+            @include easy-set((
+                    height: vw(174),
+                    margin-top: vw(44)
+            ));
+        }
+        .intro3 {
+            @include easy-set((
+                    height: vw(450),
+                    margin-top: vw(12)
+            ));
+        }
+        .logo1 {
+            @include easy-set((
+                    height: vw(650)
+            ));
+        }
+        .logo2 {
+            @include easy-set((
+                    height: vw(650)
+            ));
+        }
+        .text1 {
+            @include easy-set((
+                    width: vw(392),
+                    height: vw(55),
+                    left: vw(95),
+                    top: vw(597)
+            ));
+        }
+        .text2 {
+            @include easy-set((
+                    width: vw(424),
+                    height: vw(60),
+                    left: vw(227),
+                    top: vw(657)
+            ));
+        }
+        .zhuazi1 {
+            @include easy-set((
+                    width: vw(58),
+                    height: vw(50),
+                    left: vw(29),
+                    top: vw(606)
+            ));
+        }
+        .zhuazi2 {
+            @include easy-set((
+                    width: vw(58),
+                    height: vw(50),
+                    left: vw(672),
+                    top: vw(663)
+            ));
+        }
+        .line {
+            @include easy-set((
+                    width: vw(694),
+                    height: vw(79),
+                    left: vw(31),
+                    top: vw(702)
+            ));
+        }
+    }
+    .item4 {
+        .intro1 {
+            @include easy-set((
+                height: vw(450),
+                margin-top: vw(58)
+            ));
+        }
+        .intro2 {
+            @include easy-set((
+                    height: vw(174),
+                    margin-top: vw(44)
+            ));
+        }
+        .intro3 {
+            @include easy-set((
+                    height: vw(450),
+                    margin-top: vw(12)
+            ));
+        }
+        .logo1 {
+            @include easy-set((
+                    width: vw(450),
+                    height: vw(450)
+            ));
+        }
+        .logo2 {
+            @include easy-set((
+                    width: vw(450),
+                    height: vw(450)
+            ));
+        }
+        .text1 {
+            @include easy-set((
+                    width: vw(392),
+                    height: vw(55),
+                    left: vw(95),
+                    top: vw(547)
+            ));
+        }
+        .text2 {
+            @include easy-set((
+                    width: vw(424),
+                    height: vw(60),
+                    left: vw(227),
+                    top: vw(607)
+            ));
+        }
+        .zhuazi1 {
+            @include easy-set((
+                    width: vw(58),
+                    height: vw(50),
+                    left: vw(29),
+                    top: vw(556)
+            ));
+        }
+        .zhuazi2 {
+            @include easy-set((
+                    width: vw(58),
+                    height: vw(50),
+                    left: vw(672),
+                    top: vw(613)
+            ));
+        }
+        .line {
+            @include easy-set((
+                    width: vw(694),
+                    height: vw(79),
+                    left: vw(31),
+                    top: vw(652)
+            ));
+        }
+    }
+    .item5 {
+        .text1 {
+            @include easy-set((
+                    width: vw(370),
+                    height: vw(66),
+                    top: vh(94),
+                    left: vw(125)
+            ));
+        }
+        .text2 {
+            @include easy-set((
+                    width: vw(370),
+                    height: vw(120),
+                    top: vh(185),
+                    left: vw(274)
+            ));
+        }
+        .zhuazi {
+            @include easy-set((
+                    width: vw(59),
+                    height: vw(56),
+                    top: vh(220),
+                    left: vw(202)
+            ));
+        }
+    }
+    .item6 {
+        .text1 {
+            @include easy-set((
+                    width: vw(470),
+                    height: vw(66),
+                    top: vh(94),
+                    left: vw(65)
+            ));
+        }
+        .text2 {
+            @include easy-set((
+                    width: vw(538),
+                    height: vw(120),
+                    top: vh(180),
+                    left: vw(131)
+            ));
+        }
+        .zhuazi {
+            @include easy-set((
+                    width: vw(59),
+                    height: vw(56),
+                    top: vh(86),
+                    left: vw(576)
+            ));
+        }
+    }
+    .item7 {
+        .text1 {
+            @include easy-set((
+                    width: vw(510),
+                    height: vw(66),
+                    top: vh(94),
+                    left: vw(65)
+            ));
+        }
+        .text2 {
+            @include easy-set((
+                    width: vw(686),
+                    height: vw(75),
+                    top: vh(180),
+                    left: vw(16)
+            ));
+        }
+    }
+    .item8 {
+        .p {
+            @include easy-set((
+                    font-size: vw(36) !important,
+                    margin-bottom: vh(58) !important
+            ));
+
+        }
+        .text1 {
+            @include easy-set((
+                    top: vh(235)
+            ));
+        }
+        .logo {
+            @include easy-set((
+                    width: vw(540),
+                    height: vh(230)
+            ));
+        }
+        .intro {
+            @include easy-set((
+                    margin-top: vh(82)
+            ));
+        }
+    }
+    .item9 {
+        .p {
+            &:first-of-type {
+                @include easy-set((
+                        margin-left: vw(56)
+                ));
+            }
+            opacity: 0;
+        }
+        .text1 {
+            @include easy-set((
+                    top: vh(170)
+            ));
+        }
+        .logo {
+            @include easy-set((
+                    width: vw(240),
+                    height: vh(240)
+            ));
+        }
+        .intro {
+            @include easy-set((
+                    margin-top: vh(90)
+            ));
+        }
+    }
+    .item10 {
+        .p {
+            &:first-of-type {
+                @include easy-set((
+                        margin-left: vw(56)
+                ));
+            }
+        }
+        .text1 {
+            @include easy-set((
+                    top: vh(170)
+            ));
+        }
+        .logo {
+            @include easy-set((
+                    width: vw(240),
+                    height: vh(240)
+            ));
+        }
+        .intro {
+            @include easy-set((
+                    margin-top: vh(90)
+            ));
+        }
+    }
+    .item11 {
+        .p {
+            &:first-of-type {
+                @include easy-set((
+                    margin-left: vw(56)
+                ));
+            }
+        }
+        .text1 {
+            @include easy-set((
+                top: vh(170)
+            ));
+        }
+        .logo {
+            @include easy-set((
+                width: vw(240),
+                height: vh(240)
+            ));
+        }
+        .intro {
+            @include easy-set((
+                margin-top: vh(90)
+            ));
+        }
+    }
+    .item12 {
+        .p {
+            @include easy-set((
+                padding-left: vw(54),
+                padding-right: vw(54)
+            ));
+            opacity: 0;
+        }
+        .intro1 {
+            @include easy-set((
+                margin-top: vh(136)
+            ));
+        }
+        .intro2 {
+            @include easy-set((
+                margin-top: vh(128)
+            ));
+        }
+        .logos {
+            @include easy-set((
+                margin-top: vh(116)
+            ));
+        }
+        .logo1 {
+            @include easy-set((
+                width: vw(213),
+                height: vh(120),
+                left: vw(83)
+            ))
+        }
+        .logo2 {
+            @include easy-set((
+                width: vw(213),
+                height: vh(120),
+                left: vw(438)
+            ))
+        }
+    }
+    .item13 {
+        .p {
+            @include easy-set((
+                padding-left: vw(54),
+                padding-right: vw(54),
+                margin-bottom: vh(40)
+            ));
+            opacity: 0;
+        }
+        .intro1 {
+            @include easy-set((
+                margin-top: vh(153)
+            ));
+        }
+        .btn {
+            @include easy-set((
+                width: vw(306),
+                height: vw(83),
+                font-size: vw(40),
+                border-radius: vw(20),
+                margin-top: vh(102)
+            ));
+        }
+    }
+    .item14 {
+        .p {
+            @include easy-set((
+                    padding-left: vw(91),
+                    padding-right: vw(91),
+                    margin-bottom: vh(69)
+            ));
+        }
+        .intro1 {
+            @include easy-set((
+                    margin-top: vh(201)
+            ));
+        }
+        input {
+            @include easy-set((
+                    height: vw(80),
+                    line-height: vw(80),
+                    font-size: vw(33),
+                    padding: vw(20),
+                    border-radius: vw(20)
+            ));
+        }
+        textarea {
+            @include easy-set((
+                    height: vw(220),
+                    line-height: vw(60),
+                    font-size: vw(33),
+                    padding: vw(20),
+                    border-radius: vw(20)
+            ));
+        }
+        .btn {
+            @include easy-set((
+                    width: vw(306),
+                    height: vw(83),
+                    font-size: vw(40),
+                    border-radius: vw(20),
+                    margin-top: vh(136)
+            ));
+        }
+    }
+}
+
+@include polyfill();
+
+@include json-encode($polyfill);
