@@ -266,7 +266,8 @@ body {
   background-image: url("../../img/2/2_21.png");
   background-size: contain;
   background-position: center center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-position: top left; }
 .item2 .text1 {
   background-image: url("../../img/2/2-zi-1.png");
   background-size: contain;
@@ -301,13 +302,19 @@ body {
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
-  background-position: top left; }
+  background-position: top left;
+  max-width: 300px; }
 .item3 .logo2 {
   width: 100%;
   background-image: url("../../img/3/3_14.png");
   background-size: contain;
   background-position: center center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  max-width: 320px; }
+.item3 .intro1 .center-block__item {
+  margin-left: 0; }
+.item3 .intro3 .center-block__item {
+  background-position: 0 0; }
 .item3 .text1 {
   background-image: url("../../img/3/3_06.png");
   background-size: contain;
@@ -338,12 +345,14 @@ body {
   background-image: url("../../img/4/4_03.png");
   background-size: contain;
   background-position: center center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-position: top left; }
 .item4 .logo2 {
   background-image: url("../../img/4/4_15.png");
   background-size: contain;
   background-position: center center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-position: top left; }
 .item4 .text1 {
   background-image: url("../../img/4/4_07.png");
   background-size: contain;
@@ -444,11 +453,11 @@ body {
 .item12 .logo1 {
   position: absolute;
   top: 0;
-  background-image: url("../../img/12/12_03.png");
+  background-image: url("../../img/12/111111_03.png");
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
-  background-position: center bottom; }
+  background-position: center top; }
 .item12 .logo2 {
   position: absolute;
   top: 0;
@@ -472,13 +481,15 @@ body {
 .item14 input {
   width: 100%;
   background-color: transparent;
-  border: 1px solid #ea9a00; }
+  border: 1px solid #ea9a00;
+  color: #ea9a00; }
   .item14 input::-webkit-input-placeholder {
     color: #ea9a00; }
 .item14 textarea {
   width: 100%;
   background-color: transparent;
-  border: 1px solid #ea9a00; }
+  border: 1px solid #ea9a00;
+  color: #ea9a00; }
   .item14 textarea::-webkit-input-placeholder {
     color: #ea9a00; }
 .item14 .btn {
@@ -491,6 +502,14 @@ body {
     display: inline-block;
     height: 100%;
     vertical-align: middle; }
+
+.item {
+  display: none !important; }
+
+.item14 {
+  opacity: 1;
+  z-index: 1000 !important;
+  display: block !important; }
 
 .p {
   font-size: 4vw;
@@ -529,54 +548,54 @@ body {
 
 .item2 .intro1 {
   height: 60vw;
-  margin-top: 7.73333vw; }
+  margin-top: 6vw; }
 .item2 .intro2 {
   height: 23.2vw;
-  margin-top: 5.86667vw; }
+  margin-top: 4vw; }
 .item2 .intro3 {
   height: 60vw;
   margin-top: 1.6vw; }
 .item2 .logo1 {
-  width: 60vw;
-  height: 60vw; }
+  width: 56vw;
+  height: 53.33333vw; }
 .item2 .logo2 {
-  width: 60vw;
-  height: 60vw; }
+  width: 56vw;
+  height: 53.33333vw; }
 .item2 .text1 {
   width: 52.26667vw;
   height: 7.33333vw;
   left: 12.66667vw;
-  top: 72.93333vw; }
+  top: 67.6vw; }
 .item2 .text2 {
   width: 56.53333vw;
   height: 8vw;
   left: 30.26667vw;
-  top: 80.93333vw; }
+  top: 74.26667vw; }
 .item2 .zhuazi1 {
   width: 7.73333vw;
   height: 6.66667vw;
   left: 3.86667vw;
-  top: 74.13333vw; }
+  top: 68.66667vw; }
 .item2 .zhuazi2 {
   width: 7.73333vw;
   height: 6.66667vw;
   left: 84.26667vw;
-  top: 81.73333vw; }
+  top: 76.4vw; }
 .item2 .line {
   width: 92.53333vw;
   height: 10.53333vw;
   left: 4.13333vw;
-  top: 86.93333vw; }
+  top: 81.6vw; }
 
 .item3 .intro1 {
-  height: 60vw;
+  height: 54.66667vw;
   margin-top: 7.73333vw; }
 .item3 .intro2 {
   height: 23.2vw;
   margin-top: 5.86667vw; }
 .item3 .intro3 {
-  height: 60vw;
-  margin-top: 1.6vw; }
+  height: 54.66667vw;
+  margin-top: 8vw; }
 .item3 .logo1 {
   height: 86.66667vw; }
 .item3 .logo2 {
@@ -585,68 +604,68 @@ body {
   width: 52.26667vw;
   height: 7.33333vw;
   left: 12.66667vw;
-  top: 79.6vw; }
+  top: 68.93333vw; }
 .item3 .text2 {
   width: 56.53333vw;
   height: 8vw;
   left: 30.26667vw;
-  top: 87.6vw; }
+  top: 76.93333vw; }
 .item3 .zhuazi1 {
   width: 7.73333vw;
   height: 6.66667vw;
   left: 3.86667vw;
-  top: 80.8vw; }
+  top: 70vw; }
 .item3 .zhuazi2 {
   width: 7.73333vw;
   height: 6.66667vw;
   left: 89.6vw;
-  top: 88.4vw; }
+  top: 76.4vw; }
 .item3 .line {
   width: 92.53333vw;
   height: 10.53333vw;
   left: 4.13333vw;
-  top: 93.6vw; }
+  top: 85.2vw; }
 
 .item4 .intro1 {
   height: 60vw;
   margin-top: 7.73333vw; }
 .item4 .intro2 {
   height: 23.2vw;
-  margin-top: 5.86667vw; }
+  margin-top: 2.66667vw; }
 .item4 .intro3 {
   height: 60vw;
-  margin-top: 1.6vw; }
+  margin-top: 0.4vw; }
 .item4 .logo1 {
-  width: 60vw;
-  height: 60vw; }
+  width: 56vw;
+  height: 53.33333vw; }
 .item4 .logo2 {
-  width: 60vw;
-  height: 60vw; }
+  width: 56vw;
+  height: 53.33333vw; }
 .item4 .text1 {
   width: 52.26667vw;
   height: 7.33333vw;
   left: 12.66667vw;
-  top: 72.93333vw; }
+  top: 67.6vw; }
 .item4 .text2 {
   width: 56.53333vw;
   height: 8vw;
   left: 30.26667vw;
-  top: 80.93333vw; }
+  top: 75.6vw; }
 .item4 .zhuazi1 {
   width: 7.73333vw;
   height: 6.66667vw;
   left: 3.86667vw;
-  top: 74.13333vw; }
+  top: 68.8vw; }
 .item4 .zhuazi2 {
   width: 7.73333vw;
   height: 6.66667vw;
   left: 89.6vw;
-  top: 81.73333vw; }
+  top: 76.4vw; }
 .item4 .line {
   width: 92.53333vw;
   height: 10.53333vw;
   left: 4.13333vw;
-  top: 86.93333vw; }
+  top: 81.6vw; }
 
 .item5 .text1 {
   width: 49.33333vw;
@@ -739,15 +758,18 @@ body {
   padding-right: 7.2vw;
   opacity: 0; }
 .item12 .intro1 {
-  margin-top: 8.86571vh; }
+  margin-top: 10.82138vh; }
 .item12 .intro2 {
-  margin-top: 8.3442vh; }
+  margin-top: 9.77836vh; }
 .item12 .logos {
-  margin-top: 7.56193vh; }
+  margin-top: 6.84485vh; }
 .item12 .logo1 {
-  width: 28.4vw;
-  height: 7.82269vh;
-  left: 11.06667vw; }
+  width: 93.33333vw;
+  height: 22.16428vh;
+  left: 3.33333vw;
+  top: 0;
+  margin-top: -4vw;
+  font-size: normal; }
 .item12 .logo2 {
   width: 28.4vw;
   height: 7.82269vh;
@@ -792,20 +814,20 @@ body {
   border-radius: 2.66667vw;
   margin-top: 8.86571vh; }
 
-/*! json-encode: {".p strong": {"font-size": "5.6vw"}, ".p b": {"font-size": "5.6vw"}, ".p b strong": {"font-size": "7.46667vw"}, ".p": {"font-size": "4vw", "margin-bottom": "3.12907vh", "padding-left": "9.33333vw", "padding-right": "9.33333vw"}, ".list": {"padding-left": "9.33333vw", "padding-right": "9.33333vw"}, ".holder": {"width": "20.53333vw"}, ".mao": {"width": "9.33333vw", "height": "9.33333vw", "bottom": "9.33333vw"}, ".item1 .text1": {"width": "9.33333vw", "height": "26.66667vw", "top": "5.80183vh", "left": "70.13333vw"}, ".item1 .text2": {"width": "9.06667vw", "height": "54vw", "top": "7.7575vh", "left": "83.33333vw"}, ".item2 .intro1": {"height": "60vw", "margin-top": "7.73333vw"}, ".item2 .intro2": {"height": "23.2vw", "margin-top": "5.86667vw"}, ".item2 .intro3": {"height": "60vw", "margin-top": "1.6vw"}, ".item2 .logo1": {"width": "60vw", "height": "60vw"}, ".item2 .logo2": {"width": "60vw", "height": "60vw"}, ".item2 .text1": {"width": "52.26667vw", "height": "7.33333vw", "left": "12.66667vw", "top": "72.93333vw"}, ".item2 .text2": {"width": "56.53333vw", "height": "8vw", "left": "30.26667vw", "top": "80.93333vw"}, ".item2 .zhuazi1": {"width": "7.73333vw", "height": "6.66667vw", "left": "3.86667vw", "top": "74.13333vw"}, ".item2 .zhuazi2": {"width": "7.73333vw", "height": "6.66667vw", "left": "84.26667vw", "top": "81.73333vw"}, ".item2 .line": {"width": "92.53333vw", "height": "10.53333vw", "left": "4.13333vw", "top": "86.93333vw"}, ".item3 .intro1": {"height": "60vw", "margin-top": "7.73333vw"}, ".item3 .intro2": {"height": "23.2vw", "margin-top": "5.86667vw"}, ".item3 .intro3": {"height": "60vw", "margin-top": "1.6vw"}, ".item3 .logo1": {"height": "86.66667vw"}, ".item3 .logo2": {"height": "86.66667vw"}, ".item3 .text1": {"width": "52.26667vw", "height": "7.33333vw", "left": "12.66667vw", "top": "79.6vw"}, ".item3 .text2": {"width": "56.53333vw", "height": "8vw", "left": "30.26667vw", "top": "87.6vw"}, ".item3 .zhuazi1": {"width": "7.73333vw", "height": "6.66667vw", "left": "3.86667vw", "top": "80.8vw"}, ".item3 .zhuazi2": {"width": "7.73333vw", "height": "6.66667vw", "left": "89.6vw", "top": "88.4vw"}, ".item3 .line": {"width": "92.53333vw", "height": "10.53333vw", "left": "4.13333vw", "top": "93.6vw"}, ".item4 .intro1": {"height": "60vw", "margin-top": "7.73333vw"}, ".item4 .intro2": {"height": "23.2vw", "margin-top": "5.86667vw"}, ".item4 .intro3": {"height": "60vw", "margin-top": "1.6vw"}, ".item4 .logo1": {"width": "60vw", "height": "60vw"}, ".item4 .logo2": {"width": "60vw", "height": "60vw"}, ".item4 .text1": {"width": "52.26667vw", "height": "7.33333vw", "left": "12.66667vw", "top": "72.93333vw"}, ".item4 .text2": {"width": "56.53333vw", "height": "8vw", "left": "30.26667vw", "top": "80.93333vw"}, ".item4 .zhuazi1": {"width": "7.73333vw", "height": "6.66667vw", "left": "3.86667vw", "top": "74.13333vw"}, ".item4 .zhuazi2": {"width": "7.73333vw", "height": "6.66667vw", "left": "89.6vw", "top": "81.73333vw"}, ".item4 .line": {"width": "92.53333vw", "height": "10.53333vw", "left": "4.13333vw", "top": "86.93333vw"}, ".item5 .text1": {"width": "49.33333vw", "height": "8.8vw", "top": "6.12777vh", "left": "16.66667vw"}, ".item5 .text2": {"width": "49.33333vw", "height": "16vw", "top": "12.05997vh", "left": "36.53333vw"}, ".item5 .zhuazi": {"width": "7.86667vw", "height": "7.46667vw", "top": "14.34159vh", "left": "26.93333vw"}, ".item6 .text1": {"width": "62.66667vw", "height": "8.8vw", "top": "6.12777vh", "left": "8.66667vw"}, ".item6 .text2": {"width": "71.73333vw", "height": "16vw", "top": "11.73403vh", "left": "17.46667vw"}, ".item6 .zhuazi": {"width": "7.86667vw", "height": "7.46667vw", "top": "5.60626vh", "left": "76.8vw"}, ".item7 .text1": {"width": "68vw", "height": "8.8vw", "top": "6.12777vh", "left": "8.66667vw"}, ".item7 .text2": {"width": "91.46667vw", "height": "10vw", "top": "11.73403vh", "left": "2.13333vw"}, ".item8 .p": {"font-size": ["4.8vw", "!important"], "margin-bottom": ["3.78096vh", "!important"]}, ".item8 .text1": {"top": "15.31943vh"}, ".item8 .logo": {"width": "72vw", "height": "14.99348vh"}, ".item8 .intro": {"margin-top": "5.3455vh"}, ".item9 .p:first-of-type": {"margin-left": "7.46667vw"}, ".item9 .text1": {"top": "11.08214vh"}, ".item9 .logo": {"width": "32vw", "height": "15.64537vh"}, ".item9 .intro": {"margin-top": "5.86701vh"}, ".item10 .p:first-of-type": {"margin-left": "7.46667vw"}, ".item10 .text1": {"top": "11.08214vh"}, ".item10 .logo": {"width": "32vw", "height": "15.64537vh"}, ".item10 .intro": {"margin-top": "5.86701vh"}, ".item11 .p:first-of-type": {"margin-left": "7.46667vw"}, ".item11 .text1": {"top": "11.08214vh"}, ".item11 .logo": {"width": "32vw", "height": "15.64537vh"}, ".item11 .intro": {"margin-top": "5.86701vh"}, ".item12 .p": {"padding-left": "7.2vw", "padding-right": "7.2vw"}, ".item12 .intro1": {"margin-top": "8.86571vh"}, ".item12 .intro2": {"margin-top": "8.3442vh"}, ".item12 .logos": {"margin-top": "7.56193vh"}, ".item12 .logo1": {"width": "28.4vw", "height": "7.82269vh", "left": "11.06667vw"}, ".item12 .logo2": {"width": "28.4vw", "height": "7.82269vh", "left": "58.4vw"}, ".item13 .p": {"padding-left": "7.2vw", "padding-right": "7.2vw", "margin-bottom": "2.60756vh"}, ".item13 .intro1": {"margin-top": "9.97392vh"}, ".item13 .btn": {"width": "40.8vw", "height": "11.06667vw", "font-size": "5.33333vw", "border-radius": "2.66667vw", "margin-top": "6.64928vh"}, ".item14 .p": {"padding-left": "12.13333vw", "padding-right": "12.13333vw", "margin-bottom": "4.49804vh"}, ".item14 .intro1": {"margin-top": "13.103vh"}, ".item14 input": {"height": "10.66667vw", "line-height": "10.66667vw", "font-size": "4.4vw", "padding": "2.66667vw", "border-radius": "2.66667vw"}, ".item14 textarea": {"height": "29.33333vw", "line-height": "8vw", "font-size": "4.4vw", "padding": "2.66667vw", "border-radius": "2.66667vw"}, ".item14 .btn": {"width": "40.8vw", "height": "11.06667vw", "font-size": "5.33333vw", "border-radius": "2.66667vw", "margin-top": "8.86571vh"}} */
+/*! json-encode: {".p strong": {"font-size": "5.6vw"}, ".p b": {"font-size": "5.6vw"}, ".p b strong": {"font-size": "7.46667vw"}, ".p": {"font-size": "4vw", "margin-bottom": "3.12907vh", "padding-left": "9.33333vw", "padding-right": "9.33333vw"}, ".list": {"padding-left": "9.33333vw", "padding-right": "9.33333vw"}, ".holder": {"width": "20.53333vw"}, ".mao": {"width": "9.33333vw", "height": "9.33333vw", "bottom": "9.33333vw"}, ".item1 .text1": {"width": "9.33333vw", "height": "26.66667vw", "top": "5.80183vh", "left": "70.13333vw"}, ".item1 .text2": {"width": "9.06667vw", "height": "54vw", "top": "7.7575vh", "left": "83.33333vw"}, ".item2 .intro1": {"height": "60vw", "margin-top": "6vw"}, ".item2 .intro2": {"height": "23.2vw", "margin-top": "4vw"}, ".item2 .intro3": {"height": "60vw", "margin-top": "1.6vw"}, ".item2 .logo1": {"width": "56vw", "height": "53.33333vw"}, ".item2 .logo2": {"width": "56vw", "height": "53.33333vw"}, ".item2 .text1": {"width": "52.26667vw", "height": "7.33333vw", "left": "12.66667vw", "top": "67.6vw"}, ".item2 .text2": {"width": "56.53333vw", "height": "8vw", "left": "30.26667vw", "top": "74.26667vw"}, ".item2 .zhuazi1": {"width": "7.73333vw", "height": "6.66667vw", "left": "3.86667vw", "top": "68.66667vw"}, ".item2 .zhuazi2": {"width": "7.73333vw", "height": "6.66667vw", "left": "84.26667vw", "top": "76.4vw"}, ".item2 .line": {"width": "92.53333vw", "height": "10.53333vw", "left": "4.13333vw", "top": "81.6vw"}, ".item3 .intro1": {"height": "54.66667vw", "margin-top": "7.73333vw"}, ".item3 .intro2": {"height": "23.2vw", "margin-top": "5.86667vw"}, ".item3 .intro3": {"height": "54.66667vw", "margin-top": "8vw"}, ".item3 .logo1": {"height": "86.66667vw"}, ".item3 .logo2": {"height": "86.66667vw"}, ".item3 .text1": {"width": "52.26667vw", "height": "7.33333vw", "left": "12.66667vw", "top": "68.93333vw"}, ".item3 .text2": {"width": "56.53333vw", "height": "8vw", "left": "30.26667vw", "top": "76.93333vw"}, ".item3 .zhuazi1": {"width": "7.73333vw", "height": "6.66667vw", "left": "3.86667vw", "top": "70vw"}, ".item3 .zhuazi2": {"width": "7.73333vw", "height": "6.66667vw", "left": "89.6vw", "top": "76.4vw"}, ".item3 .line": {"width": "92.53333vw", "height": "10.53333vw", "left": "4.13333vw", "top": "85.2vw"}, ".item4 .intro1": {"height": "60vw", "margin-top": "7.73333vw"}, ".item4 .intro2": {"height": "23.2vw", "margin-top": "2.66667vw"}, ".item4 .intro3": {"height": "60vw", "margin-top": "0.4vw"}, ".item4 .logo1": {"width": "56vw", "height": "53.33333vw"}, ".item4 .logo2": {"width": "56vw", "height": "53.33333vw"}, ".item4 .text1": {"width": "52.26667vw", "height": "7.33333vw", "left": "12.66667vw", "top": "67.6vw"}, ".item4 .text2": {"width": "56.53333vw", "height": "8vw", "left": "30.26667vw", "top": "75.6vw"}, ".item4 .zhuazi1": {"width": "7.73333vw", "height": "6.66667vw", "left": "3.86667vw", "top": "68.8vw"}, ".item4 .zhuazi2": {"width": "7.73333vw", "height": "6.66667vw", "left": "89.6vw", "top": "76.4vw"}, ".item4 .line": {"width": "92.53333vw", "height": "10.53333vw", "left": "4.13333vw", "top": "81.6vw"}, ".item5 .text1": {"width": "49.33333vw", "height": "8.8vw", "top": "6.12777vh", "left": "16.66667vw"}, ".item5 .text2": {"width": "49.33333vw", "height": "16vw", "top": "12.05997vh", "left": "36.53333vw"}, ".item5 .zhuazi": {"width": "7.86667vw", "height": "7.46667vw", "top": "14.34159vh", "left": "26.93333vw"}, ".item6 .text1": {"width": "62.66667vw", "height": "8.8vw", "top": "6.12777vh", "left": "8.66667vw"}, ".item6 .text2": {"width": "71.73333vw", "height": "16vw", "top": "11.73403vh", "left": "17.46667vw"}, ".item6 .zhuazi": {"width": "7.86667vw", "height": "7.46667vw", "top": "5.60626vh", "left": "76.8vw"}, ".item7 .text1": {"width": "68vw", "height": "8.8vw", "top": "6.12777vh", "left": "8.66667vw"}, ".item7 .text2": {"width": "91.46667vw", "height": "10vw", "top": "11.73403vh", "left": "2.13333vw"}, ".item8 .p": {"font-size": ["4.8vw", "!important"], "margin-bottom": ["3.78096vh", "!important"]}, ".item8 .text1": {"top": "15.31943vh"}, ".item8 .logo": {"width": "72vw", "height": "14.99348vh"}, ".item8 .intro": {"margin-top": "5.3455vh"}, ".item9 .p:first-of-type": {"margin-left": "7.46667vw"}, ".item9 .text1": {"top": "11.08214vh"}, ".item9 .logo": {"width": "32vw", "height": "15.64537vh"}, ".item9 .intro": {"margin-top": "5.86701vh"}, ".item10 .p:first-of-type": {"margin-left": "7.46667vw"}, ".item10 .text1": {"top": "11.08214vh"}, ".item10 .logo": {"width": "32vw", "height": "15.64537vh"}, ".item10 .intro": {"margin-top": "5.86701vh"}, ".item11 .p:first-of-type": {"margin-left": "7.46667vw"}, ".item11 .text1": {"top": "11.08214vh"}, ".item11 .logo": {"width": "32vw", "height": "15.64537vh"}, ".item11 .intro": {"margin-top": "5.86701vh"}, ".item12 .p": {"padding-left": "7.2vw", "padding-right": "7.2vw"}, ".item12 .intro1": {"margin-top": "10.82138vh"}, ".item12 .intro2": {"margin-top": "9.77836vh"}, ".item12 .logos": {"margin-top": "6.84485vh"}, ".item12 .logo1": {"width": "93.33333vw", "height": "22.16428vh", "left": "3.33333vw", "top": 0, "margin-top": "-4vw", "font-size": "normal"}, ".item12 .logo2": {"width": "28.4vw", "height": "7.82269vh", "left": "58.4vw"}, ".item13 .p": {"padding-left": "7.2vw", "padding-right": "7.2vw", "margin-bottom": "2.60756vh"}, ".item13 .intro1": {"margin-top": "9.97392vh"}, ".item13 .btn": {"width": "40.8vw", "height": "11.06667vw", "font-size": "5.33333vw", "border-radius": "2.66667vw", "margin-top": "6.64928vh"}, ".item14 .p": {"padding-left": "12.13333vw", "padding-right": "12.13333vw", "margin-bottom": "4.49804vh"}, ".item14 .intro1": {"margin-top": "13.103vh"}, ".item14 input": {"height": "10.66667vw", "line-height": "10.66667vw", "font-size": "4.4vw", "padding": "2.66667vw", "border-radius": "2.66667vw"}, ".item14 textarea": {"height": "29.33333vw", "line-height": "8vw", "font-size": "4.4vw", "padding": "2.66667vw", "border-radius": "2.66667vw"}, ".item14 .btn": {"width": "40.8vw", "height": "11.06667vw", "font-size": "5.33333vw", "border-radius": "2.66667vw", "margin-top": "8.86571vh"}} */
 body::before {
-  content: '{".p strong": {"font-size": "5.6vw"}, ".p b": {"font-size": "5.6vw"}, ".p b strong": {"font-size": "7.46667vw"}, ".p": {"font-size": "4vw", "margin-bottom": "3.12907vh", "padding-left": "9.33333vw", "padding-right": "9.33333vw"}, ".list": {"padding-left": "9.33333vw", "padding-right": "9.33333vw"}, ".holder": {"width": "20.53333vw"}, ".mao": {"width": "9.33333vw", "height": "9.33333vw", "bottom": "9.33333vw"}, ".item1 .text1": {"width": "9.33333vw", "height": "26.66667vw", "top": "5.80183vh", "left": "70.13333vw"}, ".item1 .text2": {"width": "9.06667vw", "height": "54vw", "top": "7.7575vh", "left": "83.33333vw"}, ".item2 .intro1": {"height": "60vw", "margin-top": "7.73333vw"}, ".item2 .intro2": {"height": "23.2vw", "margin-top": "5.86667vw"}, ".item2 .intro3": {"height": "60vw", "margin-top": "1.6vw"}, ".item2 .logo1": {"width": "60vw", "height": "60vw"}, ".item2 .logo2": {"width": "60vw", "height": "60vw"}, ".item2 .text1": {"width": "52.26667vw", "height": "7.33333vw", "left": "12.66667vw", "top": "72.93333vw"}, ".item2 .text2": {"width": "56.53333vw", "height": "8vw", "left": "30.26667vw", "top": "80.93333vw"}, ".item2 .zhuazi1": {"width": "7.73333vw", "height": "6.66667vw", "left": "3.86667vw", "top": "74.13333vw"}, ".item2 .zhuazi2": {"width": "7.73333vw", "height": "6.66667vw", "left": "84.26667vw", "top": "81.73333vw"}, ".item2 .line": {"width": "92.53333vw", "height": "10.53333vw", "left": "4.13333vw", "top": "86.93333vw"}, ".item3 .intro1": {"height": "60vw", "margin-top": "7.73333vw"}, ".item3 .intro2": {"height": "23.2vw", "margin-top": "5.86667vw"}, ".item3 .intro3": {"height": "60vw", "margin-top": "1.6vw"}, ".item3 .logo1": {"height": "86.66667vw"}, ".item3 .logo2": {"height": "86.66667vw"}, ".item3 .text1": {"width": "52.26667vw", "height": "7.33333vw", "left": "12.66667vw", "top": "79.6vw"}, ".item3 .text2": {"width": "56.53333vw", "height": "8vw", "left": "30.26667vw", "top": "87.6vw"}, ".item3 .zhuazi1": {"width": "7.73333vw", "height": "6.66667vw", "left": "3.86667vw", "top": "80.8vw"}, ".item3 .zhuazi2": {"width": "7.73333vw", "height": "6.66667vw", "left": "89.6vw", "top": "88.4vw"}, ".item3 .line": {"width": "92.53333vw", "height": "10.53333vw", "left": "4.13333vw", "top": "93.6vw"}, ".item4 .intro1": {"height": "60vw", "margin-top": "7.73333vw"}, ".item4 .intro2": {"height": "23.2vw", "margin-top": "5.86667vw"}, ".item4 .intro3": {"height": "60vw", "margin-top": "1.6vw"}, ".item4 .logo1": {"width": "60vw", "height": "60vw"}, ".item4 .logo2": {"width": "60vw", "height": "60vw"}, ".item4 .text1": {"width": "52.26667vw", "height": "7.33333vw", "left": "12.66667vw", "top": "72.93333vw"}, ".item4 .text2": {"width": "56.53333vw", "height": "8vw", "left": "30.26667vw", "top": "80.93333vw"}, ".item4 .zhuazi1": {"width": "7.73333vw", "height": "6.66667vw", "left": "3.86667vw", "top": "74.13333vw"}, ".item4 .zhuazi2": {"width": "7.73333vw", "height": "6.66667vw", "left": "89.6vw", "top": "81.73333vw"}, ".item4 .line": {"width": "92.53333vw", "height": "10.53333vw", "left": "4.13333vw", "top": "86.93333vw"}, ".item5 .text1": {"width": "49.33333vw", "height": "8.8vw", "top": "6.12777vh", "left": "16.66667vw"}, ".item5 .text2": {"width": "49.33333vw", "height": "16vw", "top": "12.05997vh", "left": "36.53333vw"}, ".item5 .zhuazi": {"width": "7.86667vw", "height": "7.46667vw", "top": "14.34159vh", "left": "26.93333vw"}, ".item6 .text1": {"width": "62.66667vw", "height": "8.8vw", "top": "6.12777vh", "left": "8.66667vw"}, ".item6 .text2": {"width": "71.73333vw", "height": "16vw", "top": "11.73403vh", "left": "17.46667vw"}, ".item6 .zhuazi": {"width": "7.86667vw", "height": "7.46667vw", "top": "5.60626vh", "left": "76.8vw"}, ".item7 .text1": {"width": "68vw", "height": "8.8vw", "top": "6.12777vh", "left": "8.66667vw"}, ".item7 .text2": {"width": "91.46667vw", "height": "10vw", "top": "11.73403vh", "left": "2.13333vw"}, ".item8 .p": {"font-size": ["4.8vw", "!important"], "margin-bottom": ["3.78096vh", "!important"]}, ".item8 .text1": {"top": "15.31943vh"}, ".item8 .logo": {"width": "72vw", "height": "14.99348vh"}, ".item8 .intro": {"margin-top": "5.3455vh"}, ".item9 .p:first-of-type": {"margin-left": "7.46667vw"}, ".item9 .text1": {"top": "11.08214vh"}, ".item9 .logo": {"width": "32vw", "height": "15.64537vh"}, ".item9 .intro": {"margin-top": "5.86701vh"}, ".item10 .p:first-of-type": {"margin-left": "7.46667vw"}, ".item10 .text1": {"top": "11.08214vh"}, ".item10 .logo": {"width": "32vw", "height": "15.64537vh"}, ".item10 .intro": {"margin-top": "5.86701vh"}, ".item11 .p:first-of-type": {"margin-left": "7.46667vw"}, ".item11 .text1": {"top": "11.08214vh"}, ".item11 .logo": {"width": "32vw", "height": "15.64537vh"}, ".item11 .intro": {"margin-top": "5.86701vh"}, ".item12 .p": {"padding-left": "7.2vw", "padding-right": "7.2vw"}, ".item12 .intro1": {"margin-top": "8.86571vh"}, ".item12 .intro2": {"margin-top": "8.3442vh"}, ".item12 .logos": {"margin-top": "7.56193vh"}, ".item12 .logo1": {"width": "28.4vw", "height": "7.82269vh", "left": "11.06667vw"}, ".item12 .logo2": {"width": "28.4vw", "height": "7.82269vh", "left": "58.4vw"}, ".item13 .p": {"padding-left": "7.2vw", "padding-right": "7.2vw", "margin-bottom": "2.60756vh"}, ".item13 .intro1": {"margin-top": "9.97392vh"}, ".item13 .btn": {"width": "40.8vw", "height": "11.06667vw", "font-size": "5.33333vw", "border-radius": "2.66667vw", "margin-top": "6.64928vh"}, ".item14 .p": {"padding-left": "12.13333vw", "padding-right": "12.13333vw", "margin-bottom": "4.49804vh"}, ".item14 .intro1": {"margin-top": "13.103vh"}, ".item14 input": {"height": "10.66667vw", "line-height": "10.66667vw", "font-size": "4.4vw", "padding": "2.66667vw", "border-radius": "2.66667vw"}, ".item14 textarea": {"height": "29.33333vw", "line-height": "8vw", "font-size": "4.4vw", "padding": "2.66667vw", "border-radius": "2.66667vw"}, ".item14 .btn": {"width": "40.8vw", "height": "11.06667vw", "font-size": "5.33333vw", "border-radius": "2.66667vw", "margin-top": "8.86571vh"}}';
+  content: '{".p strong": {"font-size": "5.6vw"}, ".p b": {"font-size": "5.6vw"}, ".p b strong": {"font-size": "7.46667vw"}, ".p": {"font-size": "4vw", "margin-bottom": "3.12907vh", "padding-left": "9.33333vw", "padding-right": "9.33333vw"}, ".list": {"padding-left": "9.33333vw", "padding-right": "9.33333vw"}, ".holder": {"width": "20.53333vw"}, ".mao": {"width": "9.33333vw", "height": "9.33333vw", "bottom": "9.33333vw"}, ".item1 .text1": {"width": "9.33333vw", "height": "26.66667vw", "top": "5.80183vh", "left": "70.13333vw"}, ".item1 .text2": {"width": "9.06667vw", "height": "54vw", "top": "7.7575vh", "left": "83.33333vw"}, ".item2 .intro1": {"height": "60vw", "margin-top": "6vw"}, ".item2 .intro2": {"height": "23.2vw", "margin-top": "4vw"}, ".item2 .intro3": {"height": "60vw", "margin-top": "1.6vw"}, ".item2 .logo1": {"width": "56vw", "height": "53.33333vw"}, ".item2 .logo2": {"width": "56vw", "height": "53.33333vw"}, ".item2 .text1": {"width": "52.26667vw", "height": "7.33333vw", "left": "12.66667vw", "top": "67.6vw"}, ".item2 .text2": {"width": "56.53333vw", "height": "8vw", "left": "30.26667vw", "top": "74.26667vw"}, ".item2 .zhuazi1": {"width": "7.73333vw", "height": "6.66667vw", "left": "3.86667vw", "top": "68.66667vw"}, ".item2 .zhuazi2": {"width": "7.73333vw", "height": "6.66667vw", "left": "84.26667vw", "top": "76.4vw"}, ".item2 .line": {"width": "92.53333vw", "height": "10.53333vw", "left": "4.13333vw", "top": "81.6vw"}, ".item3 .intro1": {"height": "54.66667vw", "margin-top": "7.73333vw"}, ".item3 .intro2": {"height": "23.2vw", "margin-top": "5.86667vw"}, ".item3 .intro3": {"height": "54.66667vw", "margin-top": "8vw"}, ".item3 .logo1": {"height": "86.66667vw"}, ".item3 .logo2": {"height": "86.66667vw"}, ".item3 .text1": {"width": "52.26667vw", "height": "7.33333vw", "left": "12.66667vw", "top": "68.93333vw"}, ".item3 .text2": {"width": "56.53333vw", "height": "8vw", "left": "30.26667vw", "top": "76.93333vw"}, ".item3 .zhuazi1": {"width": "7.73333vw", "height": "6.66667vw", "left": "3.86667vw", "top": "70vw"}, ".item3 .zhuazi2": {"width": "7.73333vw", "height": "6.66667vw", "left": "89.6vw", "top": "76.4vw"}, ".item3 .line": {"width": "92.53333vw", "height": "10.53333vw", "left": "4.13333vw", "top": "85.2vw"}, ".item4 .intro1": {"height": "60vw", "margin-top": "7.73333vw"}, ".item4 .intro2": {"height": "23.2vw", "margin-top": "2.66667vw"}, ".item4 .intro3": {"height": "60vw", "margin-top": "0.4vw"}, ".item4 .logo1": {"width": "56vw", "height": "53.33333vw"}, ".item4 .logo2": {"width": "56vw", "height": "53.33333vw"}, ".item4 .text1": {"width": "52.26667vw", "height": "7.33333vw", "left": "12.66667vw", "top": "67.6vw"}, ".item4 .text2": {"width": "56.53333vw", "height": "8vw", "left": "30.26667vw", "top": "75.6vw"}, ".item4 .zhuazi1": {"width": "7.73333vw", "height": "6.66667vw", "left": "3.86667vw", "top": "68.8vw"}, ".item4 .zhuazi2": {"width": "7.73333vw", "height": "6.66667vw", "left": "89.6vw", "top": "76.4vw"}, ".item4 .line": {"width": "92.53333vw", "height": "10.53333vw", "left": "4.13333vw", "top": "81.6vw"}, ".item5 .text1": {"width": "49.33333vw", "height": "8.8vw", "top": "6.12777vh", "left": "16.66667vw"}, ".item5 .text2": {"width": "49.33333vw", "height": "16vw", "top": "12.05997vh", "left": "36.53333vw"}, ".item5 .zhuazi": {"width": "7.86667vw", "height": "7.46667vw", "top": "14.34159vh", "left": "26.93333vw"}, ".item6 .text1": {"width": "62.66667vw", "height": "8.8vw", "top": "6.12777vh", "left": "8.66667vw"}, ".item6 .text2": {"width": "71.73333vw", "height": "16vw", "top": "11.73403vh", "left": "17.46667vw"}, ".item6 .zhuazi": {"width": "7.86667vw", "height": "7.46667vw", "top": "5.60626vh", "left": "76.8vw"}, ".item7 .text1": {"width": "68vw", "height": "8.8vw", "top": "6.12777vh", "left": "8.66667vw"}, ".item7 .text2": {"width": "91.46667vw", "height": "10vw", "top": "11.73403vh", "left": "2.13333vw"}, ".item8 .p": {"font-size": ["4.8vw", "!important"], "margin-bottom": ["3.78096vh", "!important"]}, ".item8 .text1": {"top": "15.31943vh"}, ".item8 .logo": {"width": "72vw", "height": "14.99348vh"}, ".item8 .intro": {"margin-top": "5.3455vh"}, ".item9 .p:first-of-type": {"margin-left": "7.46667vw"}, ".item9 .text1": {"top": "11.08214vh"}, ".item9 .logo": {"width": "32vw", "height": "15.64537vh"}, ".item9 .intro": {"margin-top": "5.86701vh"}, ".item10 .p:first-of-type": {"margin-left": "7.46667vw"}, ".item10 .text1": {"top": "11.08214vh"}, ".item10 .logo": {"width": "32vw", "height": "15.64537vh"}, ".item10 .intro": {"margin-top": "5.86701vh"}, ".item11 .p:first-of-type": {"margin-left": "7.46667vw"}, ".item11 .text1": {"top": "11.08214vh"}, ".item11 .logo": {"width": "32vw", "height": "15.64537vh"}, ".item11 .intro": {"margin-top": "5.86701vh"}, ".item12 .p": {"padding-left": "7.2vw", "padding-right": "7.2vw"}, ".item12 .intro1": {"margin-top": "10.82138vh"}, ".item12 .intro2": {"margin-top": "9.77836vh"}, ".item12 .logos": {"margin-top": "6.84485vh"}, ".item12 .logo1": {"width": "93.33333vw", "height": "22.16428vh", "left": "3.33333vw", "top": 0, "margin-top": "-4vw", "font-size": "normal"}, ".item12 .logo2": {"width": "28.4vw", "height": "7.82269vh", "left": "58.4vw"}, ".item13 .p": {"padding-left": "7.2vw", "padding-right": "7.2vw", "margin-bottom": "2.60756vh"}, ".item13 .intro1": {"margin-top": "9.97392vh"}, ".item13 .btn": {"width": "40.8vw", "height": "11.06667vw", "font-size": "5.33333vw", "border-radius": "2.66667vw", "margin-top": "6.64928vh"}, ".item14 .p": {"padding-left": "12.13333vw", "padding-right": "12.13333vw", "margin-bottom": "4.49804vh"}, ".item14 .intro1": {"margin-top": "13.103vh"}, ".item14 input": {"height": "10.66667vw", "line-height": "10.66667vw", "font-size": "4.4vw", "padding": "2.66667vw", "border-radius": "2.66667vw"}, ".item14 textarea": {"height": "29.33333vw", "line-height": "8vw", "font-size": "4.4vw", "padding": "2.66667vw", "border-radius": "2.66667vw"}, ".item14 .btn": {"width": "40.8vw", "height": "11.06667vw", "font-size": "5.33333vw", "border-radius": "2.66667vw", "margin-top": "8.86571vh"}}';
   display: block;
   height: 0;
   overflow: hidden;
   width: 0; }
 
 head {
-  font-family: '{".p strong": {"font-size": "5.6vw"}, ".p b": {"font-size": "5.6vw"}, ".p b strong": {"font-size": "7.46667vw"}, ".p": {"font-size": "4vw", "margin-bottom": "3.12907vh", "padding-left": "9.33333vw", "padding-right": "9.33333vw"}, ".list": {"padding-left": "9.33333vw", "padding-right": "9.33333vw"}, ".holder": {"width": "20.53333vw"}, ".mao": {"width": "9.33333vw", "height": "9.33333vw", "bottom": "9.33333vw"}, ".item1 .text1": {"width": "9.33333vw", "height": "26.66667vw", "top": "5.80183vh", "left": "70.13333vw"}, ".item1 .text2": {"width": "9.06667vw", "height": "54vw", "top": "7.7575vh", "left": "83.33333vw"}, ".item2 .intro1": {"height": "60vw", "margin-top": "7.73333vw"}, ".item2 .intro2": {"height": "23.2vw", "margin-top": "5.86667vw"}, ".item2 .intro3": {"height": "60vw", "margin-top": "1.6vw"}, ".item2 .logo1": {"width": "60vw", "height": "60vw"}, ".item2 .logo2": {"width": "60vw", "height": "60vw"}, ".item2 .text1": {"width": "52.26667vw", "height": "7.33333vw", "left": "12.66667vw", "top": "72.93333vw"}, ".item2 .text2": {"width": "56.53333vw", "height": "8vw", "left": "30.26667vw", "top": "80.93333vw"}, ".item2 .zhuazi1": {"width": "7.73333vw", "height": "6.66667vw", "left": "3.86667vw", "top": "74.13333vw"}, ".item2 .zhuazi2": {"width": "7.73333vw", "height": "6.66667vw", "left": "84.26667vw", "top": "81.73333vw"}, ".item2 .line": {"width": "92.53333vw", "height": "10.53333vw", "left": "4.13333vw", "top": "86.93333vw"}, ".item3 .intro1": {"height": "60vw", "margin-top": "7.73333vw"}, ".item3 .intro2": {"height": "23.2vw", "margin-top": "5.86667vw"}, ".item3 .intro3": {"height": "60vw", "margin-top": "1.6vw"}, ".item3 .logo1": {"height": "86.66667vw"}, ".item3 .logo2": {"height": "86.66667vw"}, ".item3 .text1": {"width": "52.26667vw", "height": "7.33333vw", "left": "12.66667vw", "top": "79.6vw"}, ".item3 .text2": {"width": "56.53333vw", "height": "8vw", "left": "30.26667vw", "top": "87.6vw"}, ".item3 .zhuazi1": {"width": "7.73333vw", "height": "6.66667vw", "left": "3.86667vw", "top": "80.8vw"}, ".item3 .zhuazi2": {"width": "7.73333vw", "height": "6.66667vw", "left": "89.6vw", "top": "88.4vw"}, ".item3 .line": {"width": "92.53333vw", "height": "10.53333vw", "left": "4.13333vw", "top": "93.6vw"}, ".item4 .intro1": {"height": "60vw", "margin-top": "7.73333vw"}, ".item4 .intro2": {"height": "23.2vw", "margin-top": "5.86667vw"}, ".item4 .intro3": {"height": "60vw", "margin-top": "1.6vw"}, ".item4 .logo1": {"width": "60vw", "height": "60vw"}, ".item4 .logo2": {"width": "60vw", "height": "60vw"}, ".item4 .text1": {"width": "52.26667vw", "height": "7.33333vw", "left": "12.66667vw", "top": "72.93333vw"}, ".item4 .text2": {"width": "56.53333vw", "height": "8vw", "left": "30.26667vw", "top": "80.93333vw"}, ".item4 .zhuazi1": {"width": "7.73333vw", "height": "6.66667vw", "left": "3.86667vw", "top": "74.13333vw"}, ".item4 .zhuazi2": {"width": "7.73333vw", "height": "6.66667vw", "left": "89.6vw", "top": "81.73333vw"}, ".item4 .line": {"width": "92.53333vw", "height": "10.53333vw", "left": "4.13333vw", "top": "86.93333vw"}, ".item5 .text1": {"width": "49.33333vw", "height": "8.8vw", "top": "6.12777vh", "left": "16.66667vw"}, ".item5 .text2": {"width": "49.33333vw", "height": "16vw", "top": "12.05997vh", "left": "36.53333vw"}, ".item5 .zhuazi": {"width": "7.86667vw", "height": "7.46667vw", "top": "14.34159vh", "left": "26.93333vw"}, ".item6 .text1": {"width": "62.66667vw", "height": "8.8vw", "top": "6.12777vh", "left": "8.66667vw"}, ".item6 .text2": {"width": "71.73333vw", "height": "16vw", "top": "11.73403vh", "left": "17.46667vw"}, ".item6 .zhuazi": {"width": "7.86667vw", "height": "7.46667vw", "top": "5.60626vh", "left": "76.8vw"}, ".item7 .text1": {"width": "68vw", "height": "8.8vw", "top": "6.12777vh", "left": "8.66667vw"}, ".item7 .text2": {"width": "91.46667vw", "height": "10vw", "top": "11.73403vh", "left": "2.13333vw"}, ".item8 .p": {"font-size": ["4.8vw", "!important"], "margin-bottom": ["3.78096vh", "!important"]}, ".item8 .text1": {"top": "15.31943vh"}, ".item8 .logo": {"width": "72vw", "height": "14.99348vh"}, ".item8 .intro": {"margin-top": "5.3455vh"}, ".item9 .p:first-of-type": {"margin-left": "7.46667vw"}, ".item9 .text1": {"top": "11.08214vh"}, ".item9 .logo": {"width": "32vw", "height": "15.64537vh"}, ".item9 .intro": {"margin-top": "5.86701vh"}, ".item10 .p:first-of-type": {"margin-left": "7.46667vw"}, ".item10 .text1": {"top": "11.08214vh"}, ".item10 .logo": {"width": "32vw", "height": "15.64537vh"}, ".item10 .intro": {"margin-top": "5.86701vh"}, ".item11 .p:first-of-type": {"margin-left": "7.46667vw"}, ".item11 .text1": {"top": "11.08214vh"}, ".item11 .logo": {"width": "32vw", "height": "15.64537vh"}, ".item11 .intro": {"margin-top": "5.86701vh"}, ".item12 .p": {"padding-left": "7.2vw", "padding-right": "7.2vw"}, ".item12 .intro1": {"margin-top": "8.86571vh"}, ".item12 .intro2": {"margin-top": "8.3442vh"}, ".item12 .logos": {"margin-top": "7.56193vh"}, ".item12 .logo1": {"width": "28.4vw", "height": "7.82269vh", "left": "11.06667vw"}, ".item12 .logo2": {"width": "28.4vw", "height": "7.82269vh", "left": "58.4vw"}, ".item13 .p": {"padding-left": "7.2vw", "padding-right": "7.2vw", "margin-bottom": "2.60756vh"}, ".item13 .intro1": {"margin-top": "9.97392vh"}, ".item13 .btn": {"width": "40.8vw", "height": "11.06667vw", "font-size": "5.33333vw", "border-radius": "2.66667vw", "margin-top": "6.64928vh"}, ".item14 .p": {"padding-left": "12.13333vw", "padding-right": "12.13333vw", "margin-bottom": "4.49804vh"}, ".item14 .intro1": {"margin-top": "13.103vh"}, ".item14 input": {"height": "10.66667vw", "line-height": "10.66667vw", "font-size": "4.4vw", "padding": "2.66667vw", "border-radius": "2.66667vw"}, ".item14 textarea": {"height": "29.33333vw", "line-height": "8vw", "font-size": "4.4vw", "padding": "2.66667vw", "border-radius": "2.66667vw"}, ".item14 .btn": {"width": "40.8vw", "height": "11.06667vw", "font-size": "5.33333vw", "border-radius": "2.66667vw", "margin-top": "8.86571vh"}}'; }
+  font-family: '{".p strong": {"font-size": "5.6vw"}, ".p b": {"font-size": "5.6vw"}, ".p b strong": {"font-size": "7.46667vw"}, ".p": {"font-size": "4vw", "margin-bottom": "3.12907vh", "padding-left": "9.33333vw", "padding-right": "9.33333vw"}, ".list": {"padding-left": "9.33333vw", "padding-right": "9.33333vw"}, ".holder": {"width": "20.53333vw"}, ".mao": {"width": "9.33333vw", "height": "9.33333vw", "bottom": "9.33333vw"}, ".item1 .text1": {"width": "9.33333vw", "height": "26.66667vw", "top": "5.80183vh", "left": "70.13333vw"}, ".item1 .text2": {"width": "9.06667vw", "height": "54vw", "top": "7.7575vh", "left": "83.33333vw"}, ".item2 .intro1": {"height": "60vw", "margin-top": "6vw"}, ".item2 .intro2": {"height": "23.2vw", "margin-top": "4vw"}, ".item2 .intro3": {"height": "60vw", "margin-top": "1.6vw"}, ".item2 .logo1": {"width": "56vw", "height": "53.33333vw"}, ".item2 .logo2": {"width": "56vw", "height": "53.33333vw"}, ".item2 .text1": {"width": "52.26667vw", "height": "7.33333vw", "left": "12.66667vw", "top": "67.6vw"}, ".item2 .text2": {"width": "56.53333vw", "height": "8vw", "left": "30.26667vw", "top": "74.26667vw"}, ".item2 .zhuazi1": {"width": "7.73333vw", "height": "6.66667vw", "left": "3.86667vw", "top": "68.66667vw"}, ".item2 .zhuazi2": {"width": "7.73333vw", "height": "6.66667vw", "left": "84.26667vw", "top": "76.4vw"}, ".item2 .line": {"width": "92.53333vw", "height": "10.53333vw", "left": "4.13333vw", "top": "81.6vw"}, ".item3 .intro1": {"height": "54.66667vw", "margin-top": "7.73333vw"}, ".item3 .intro2": {"height": "23.2vw", "margin-top": "5.86667vw"}, ".item3 .intro3": {"height": "54.66667vw", "margin-top": "8vw"}, ".item3 .logo1": {"height": "86.66667vw"}, ".item3 .logo2": {"height": "86.66667vw"}, ".item3 .text1": {"width": "52.26667vw", "height": "7.33333vw", "left": "12.66667vw", "top": "68.93333vw"}, ".item3 .text2": {"width": "56.53333vw", "height": "8vw", "left": "30.26667vw", "top": "76.93333vw"}, ".item3 .zhuazi1": {"width": "7.73333vw", "height": "6.66667vw", "left": "3.86667vw", "top": "70vw"}, ".item3 .zhuazi2": {"width": "7.73333vw", "height": "6.66667vw", "left": "89.6vw", "top": "76.4vw"}, ".item3 .line": {"width": "92.53333vw", "height": "10.53333vw", "left": "4.13333vw", "top": "85.2vw"}, ".item4 .intro1": {"height": "60vw", "margin-top": "7.73333vw"}, ".item4 .intro2": {"height": "23.2vw", "margin-top": "2.66667vw"}, ".item4 .intro3": {"height": "60vw", "margin-top": "0.4vw"}, ".item4 .logo1": {"width": "56vw", "height": "53.33333vw"}, ".item4 .logo2": {"width": "56vw", "height": "53.33333vw"}, ".item4 .text1": {"width": "52.26667vw", "height": "7.33333vw", "left": "12.66667vw", "top": "67.6vw"}, ".item4 .text2": {"width": "56.53333vw", "height": "8vw", "left": "30.26667vw", "top": "75.6vw"}, ".item4 .zhuazi1": {"width": "7.73333vw", "height": "6.66667vw", "left": "3.86667vw", "top": "68.8vw"}, ".item4 .zhuazi2": {"width": "7.73333vw", "height": "6.66667vw", "left": "89.6vw", "top": "76.4vw"}, ".item4 .line": {"width": "92.53333vw", "height": "10.53333vw", "left": "4.13333vw", "top": "81.6vw"}, ".item5 .text1": {"width": "49.33333vw", "height": "8.8vw", "top": "6.12777vh", "left": "16.66667vw"}, ".item5 .text2": {"width": "49.33333vw", "height": "16vw", "top": "12.05997vh", "left": "36.53333vw"}, ".item5 .zhuazi": {"width": "7.86667vw", "height": "7.46667vw", "top": "14.34159vh", "left": "26.93333vw"}, ".item6 .text1": {"width": "62.66667vw", "height": "8.8vw", "top": "6.12777vh", "left": "8.66667vw"}, ".item6 .text2": {"width": "71.73333vw", "height": "16vw", "top": "11.73403vh", "left": "17.46667vw"}, ".item6 .zhuazi": {"width": "7.86667vw", "height": "7.46667vw", "top": "5.60626vh", "left": "76.8vw"}, ".item7 .text1": {"width": "68vw", "height": "8.8vw", "top": "6.12777vh", "left": "8.66667vw"}, ".item7 .text2": {"width": "91.46667vw", "height": "10vw", "top": "11.73403vh", "left": "2.13333vw"}, ".item8 .p": {"font-size": ["4.8vw", "!important"], "margin-bottom": ["3.78096vh", "!important"]}, ".item8 .text1": {"top": "15.31943vh"}, ".item8 .logo": {"width": "72vw", "height": "14.99348vh"}, ".item8 .intro": {"margin-top": "5.3455vh"}, ".item9 .p:first-of-type": {"margin-left": "7.46667vw"}, ".item9 .text1": {"top": "11.08214vh"}, ".item9 .logo": {"width": "32vw", "height": "15.64537vh"}, ".item9 .intro": {"margin-top": "5.86701vh"}, ".item10 .p:first-of-type": {"margin-left": "7.46667vw"}, ".item10 .text1": {"top": "11.08214vh"}, ".item10 .logo": {"width": "32vw", "height": "15.64537vh"}, ".item10 .intro": {"margin-top": "5.86701vh"}, ".item11 .p:first-of-type": {"margin-left": "7.46667vw"}, ".item11 .text1": {"top": "11.08214vh"}, ".item11 .logo": {"width": "32vw", "height": "15.64537vh"}, ".item11 .intro": {"margin-top": "5.86701vh"}, ".item12 .p": {"padding-left": "7.2vw", "padding-right": "7.2vw"}, ".item12 .intro1": {"margin-top": "10.82138vh"}, ".item12 .intro2": {"margin-top": "9.77836vh"}, ".item12 .logos": {"margin-top": "6.84485vh"}, ".item12 .logo1": {"width": "93.33333vw", "height": "22.16428vh", "left": "3.33333vw", "top": 0, "margin-top": "-4vw", "font-size": "normal"}, ".item12 .logo2": {"width": "28.4vw", "height": "7.82269vh", "left": "58.4vw"}, ".item13 .p": {"padding-left": "7.2vw", "padding-right": "7.2vw", "margin-bottom": "2.60756vh"}, ".item13 .intro1": {"margin-top": "9.97392vh"}, ".item13 .btn": {"width": "40.8vw", "height": "11.06667vw", "font-size": "5.33333vw", "border-radius": "2.66667vw", "margin-top": "6.64928vh"}, ".item14 .p": {"padding-left": "12.13333vw", "padding-right": "12.13333vw", "margin-bottom": "4.49804vh"}, ".item14 .intro1": {"margin-top": "13.103vh"}, ".item14 input": {"height": "10.66667vw", "line-height": "10.66667vw", "font-size": "4.4vw", "padding": "2.66667vw", "border-radius": "2.66667vw"}, ".item14 textarea": {"height": "29.33333vw", "line-height": "8vw", "font-size": "4.4vw", "padding": "2.66667vw", "border-radius": "2.66667vw"}, ".item14 .btn": {"width": "40.8vw", "height": "11.06667vw", "font-size": "5.33333vw", "border-radius": "2.66667vw", "margin-top": "8.86571vh"}}'; }
 
 @media -json-encode {
   json {
-    json: '{".p strong": {"font-size": "5.6vw"}, ".p b": {"font-size": "5.6vw"}, ".p b strong": {"font-size": "7.46667vw"}, ".p": {"font-size": "4vw", "margin-bottom": "3.12907vh", "padding-left": "9.33333vw", "padding-right": "9.33333vw"}, ".list": {"padding-left": "9.33333vw", "padding-right": "9.33333vw"}, ".holder": {"width": "20.53333vw"}, ".mao": {"width": "9.33333vw", "height": "9.33333vw", "bottom": "9.33333vw"}, ".item1 .text1": {"width": "9.33333vw", "height": "26.66667vw", "top": "5.80183vh", "left": "70.13333vw"}, ".item1 .text2": {"width": "9.06667vw", "height": "54vw", "top": "7.7575vh", "left": "83.33333vw"}, ".item2 .intro1": {"height": "60vw", "margin-top": "7.73333vw"}, ".item2 .intro2": {"height": "23.2vw", "margin-top": "5.86667vw"}, ".item2 .intro3": {"height": "60vw", "margin-top": "1.6vw"}, ".item2 .logo1": {"width": "60vw", "height": "60vw"}, ".item2 .logo2": {"width": "60vw", "height": "60vw"}, ".item2 .text1": {"width": "52.26667vw", "height": "7.33333vw", "left": "12.66667vw", "top": "72.93333vw"}, ".item2 .text2": {"width": "56.53333vw", "height": "8vw", "left": "30.26667vw", "top": "80.93333vw"}, ".item2 .zhuazi1": {"width": "7.73333vw", "height": "6.66667vw", "left": "3.86667vw", "top": "74.13333vw"}, ".item2 .zhuazi2": {"width": "7.73333vw", "height": "6.66667vw", "left": "84.26667vw", "top": "81.73333vw"}, ".item2 .line": {"width": "92.53333vw", "height": "10.53333vw", "left": "4.13333vw", "top": "86.93333vw"}, ".item3 .intro1": {"height": "60vw", "margin-top": "7.73333vw"}, ".item3 .intro2": {"height": "23.2vw", "margin-top": "5.86667vw"}, ".item3 .intro3": {"height": "60vw", "margin-top": "1.6vw"}, ".item3 .logo1": {"height": "86.66667vw"}, ".item3 .logo2": {"height": "86.66667vw"}, ".item3 .text1": {"width": "52.26667vw", "height": "7.33333vw", "left": "12.66667vw", "top": "79.6vw"}, ".item3 .text2": {"width": "56.53333vw", "height": "8vw", "left": "30.26667vw", "top": "87.6vw"}, ".item3 .zhuazi1": {"width": "7.73333vw", "height": "6.66667vw", "left": "3.86667vw", "top": "80.8vw"}, ".item3 .zhuazi2": {"width": "7.73333vw", "height": "6.66667vw", "left": "89.6vw", "top": "88.4vw"}, ".item3 .line": {"width": "92.53333vw", "height": "10.53333vw", "left": "4.13333vw", "top": "93.6vw"}, ".item4 .intro1": {"height": "60vw", "margin-top": "7.73333vw"}, ".item4 .intro2": {"height": "23.2vw", "margin-top": "5.86667vw"}, ".item4 .intro3": {"height": "60vw", "margin-top": "1.6vw"}, ".item4 .logo1": {"width": "60vw", "height": "60vw"}, ".item4 .logo2": {"width": "60vw", "height": "60vw"}, ".item4 .text1": {"width": "52.26667vw", "height": "7.33333vw", "left": "12.66667vw", "top": "72.93333vw"}, ".item4 .text2": {"width": "56.53333vw", "height": "8vw", "left": "30.26667vw", "top": "80.93333vw"}, ".item4 .zhuazi1": {"width": "7.73333vw", "height": "6.66667vw", "left": "3.86667vw", "top": "74.13333vw"}, ".item4 .zhuazi2": {"width": "7.73333vw", "height": "6.66667vw", "left": "89.6vw", "top": "81.73333vw"}, ".item4 .line": {"width": "92.53333vw", "height": "10.53333vw", "left": "4.13333vw", "top": "86.93333vw"}, ".item5 .text1": {"width": "49.33333vw", "height": "8.8vw", "top": "6.12777vh", "left": "16.66667vw"}, ".item5 .text2": {"width": "49.33333vw", "height": "16vw", "top": "12.05997vh", "left": "36.53333vw"}, ".item5 .zhuazi": {"width": "7.86667vw", "height": "7.46667vw", "top": "14.34159vh", "left": "26.93333vw"}, ".item6 .text1": {"width": "62.66667vw", "height": "8.8vw", "top": "6.12777vh", "left": "8.66667vw"}, ".item6 .text2": {"width": "71.73333vw", "height": "16vw", "top": "11.73403vh", "left": "17.46667vw"}, ".item6 .zhuazi": {"width": "7.86667vw", "height": "7.46667vw", "top": "5.60626vh", "left": "76.8vw"}, ".item7 .text1": {"width": "68vw", "height": "8.8vw", "top": "6.12777vh", "left": "8.66667vw"}, ".item7 .text2": {"width": "91.46667vw", "height": "10vw", "top": "11.73403vh", "left": "2.13333vw"}, ".item8 .p": {"font-size": ["4.8vw", "!important"], "margin-bottom": ["3.78096vh", "!important"]}, ".item8 .text1": {"top": "15.31943vh"}, ".item8 .logo": {"width": "72vw", "height": "14.99348vh"}, ".item8 .intro": {"margin-top": "5.3455vh"}, ".item9 .p:first-of-type": {"margin-left": "7.46667vw"}, ".item9 .text1": {"top": "11.08214vh"}, ".item9 .logo": {"width": "32vw", "height": "15.64537vh"}, ".item9 .intro": {"margin-top": "5.86701vh"}, ".item10 .p:first-of-type": {"margin-left": "7.46667vw"}, ".item10 .text1": {"top": "11.08214vh"}, ".item10 .logo": {"width": "32vw", "height": "15.64537vh"}, ".item10 .intro": {"margin-top": "5.86701vh"}, ".item11 .p:first-of-type": {"margin-left": "7.46667vw"}, ".item11 .text1": {"top": "11.08214vh"}, ".item11 .logo": {"width": "32vw", "height": "15.64537vh"}, ".item11 .intro": {"margin-top": "5.86701vh"}, ".item12 .p": {"padding-left": "7.2vw", "padding-right": "7.2vw"}, ".item12 .intro1": {"margin-top": "8.86571vh"}, ".item12 .intro2": {"margin-top": "8.3442vh"}, ".item12 .logos": {"margin-top": "7.56193vh"}, ".item12 .logo1": {"width": "28.4vw", "height": "7.82269vh", "left": "11.06667vw"}, ".item12 .logo2": {"width": "28.4vw", "height": "7.82269vh", "left": "58.4vw"}, ".item13 .p": {"padding-left": "7.2vw", "padding-right": "7.2vw", "margin-bottom": "2.60756vh"}, ".item13 .intro1": {"margin-top": "9.97392vh"}, ".item13 .btn": {"width": "40.8vw", "height": "11.06667vw", "font-size": "5.33333vw", "border-radius": "2.66667vw", "margin-top": "6.64928vh"}, ".item14 .p": {"padding-left": "12.13333vw", "padding-right": "12.13333vw", "margin-bottom": "4.49804vh"}, ".item14 .intro1": {"margin-top": "13.103vh"}, ".item14 input": {"height": "10.66667vw", "line-height": "10.66667vw", "font-size": "4.4vw", "padding": "2.66667vw", "border-radius": "2.66667vw"}, ".item14 textarea": {"height": "29.33333vw", "line-height": "8vw", "font-size": "4.4vw", "padding": "2.66667vw", "border-radius": "2.66667vw"}, ".item14 .btn": {"width": "40.8vw", "height": "11.06667vw", "font-size": "5.33333vw", "border-radius": "2.66667vw", "margin-top": "8.86571vh"}}'; } }
+    json: '{".p strong": {"font-size": "5.6vw"}, ".p b": {"font-size": "5.6vw"}, ".p b strong": {"font-size": "7.46667vw"}, ".p": {"font-size": "4vw", "margin-bottom": "3.12907vh", "padding-left": "9.33333vw", "padding-right": "9.33333vw"}, ".list": {"padding-left": "9.33333vw", "padding-right": "9.33333vw"}, ".holder": {"width": "20.53333vw"}, ".mao": {"width": "9.33333vw", "height": "9.33333vw", "bottom": "9.33333vw"}, ".item1 .text1": {"width": "9.33333vw", "height": "26.66667vw", "top": "5.80183vh", "left": "70.13333vw"}, ".item1 .text2": {"width": "9.06667vw", "height": "54vw", "top": "7.7575vh", "left": "83.33333vw"}, ".item2 .intro1": {"height": "60vw", "margin-top": "6vw"}, ".item2 .intro2": {"height": "23.2vw", "margin-top": "4vw"}, ".item2 .intro3": {"height": "60vw", "margin-top": "1.6vw"}, ".item2 .logo1": {"width": "56vw", "height": "53.33333vw"}, ".item2 .logo2": {"width": "56vw", "height": "53.33333vw"}, ".item2 .text1": {"width": "52.26667vw", "height": "7.33333vw", "left": "12.66667vw", "top": "67.6vw"}, ".item2 .text2": {"width": "56.53333vw", "height": "8vw", "left": "30.26667vw", "top": "74.26667vw"}, ".item2 .zhuazi1": {"width": "7.73333vw", "height": "6.66667vw", "left": "3.86667vw", "top": "68.66667vw"}, ".item2 .zhuazi2": {"width": "7.73333vw", "height": "6.66667vw", "left": "84.26667vw", "top": "76.4vw"}, ".item2 .line": {"width": "92.53333vw", "height": "10.53333vw", "left": "4.13333vw", "top": "81.6vw"}, ".item3 .intro1": {"height": "54.66667vw", "margin-top": "7.73333vw"}, ".item3 .intro2": {"height": "23.2vw", "margin-top": "5.86667vw"}, ".item3 .intro3": {"height": "54.66667vw", "margin-top": "8vw"}, ".item3 .logo1": {"height": "86.66667vw"}, ".item3 .logo2": {"height": "86.66667vw"}, ".item3 .text1": {"width": "52.26667vw", "height": "7.33333vw", "left": "12.66667vw", "top": "68.93333vw"}, ".item3 .text2": {"width": "56.53333vw", "height": "8vw", "left": "30.26667vw", "top": "76.93333vw"}, ".item3 .zhuazi1": {"width": "7.73333vw", "height": "6.66667vw", "left": "3.86667vw", "top": "70vw"}, ".item3 .zhuazi2": {"width": "7.73333vw", "height": "6.66667vw", "left": "89.6vw", "top": "76.4vw"}, ".item3 .line": {"width": "92.53333vw", "height": "10.53333vw", "left": "4.13333vw", "top": "85.2vw"}, ".item4 .intro1": {"height": "60vw", "margin-top": "7.73333vw"}, ".item4 .intro2": {"height": "23.2vw", "margin-top": "2.66667vw"}, ".item4 .intro3": {"height": "60vw", "margin-top": "0.4vw"}, ".item4 .logo1": {"width": "56vw", "height": "53.33333vw"}, ".item4 .logo2": {"width": "56vw", "height": "53.33333vw"}, ".item4 .text1": {"width": "52.26667vw", "height": "7.33333vw", "left": "12.66667vw", "top": "67.6vw"}, ".item4 .text2": {"width": "56.53333vw", "height": "8vw", "left": "30.26667vw", "top": "75.6vw"}, ".item4 .zhuazi1": {"width": "7.73333vw", "height": "6.66667vw", "left": "3.86667vw", "top": "68.8vw"}, ".item4 .zhuazi2": {"width": "7.73333vw", "height": "6.66667vw", "left": "89.6vw", "top": "76.4vw"}, ".item4 .line": {"width": "92.53333vw", "height": "10.53333vw", "left": "4.13333vw", "top": "81.6vw"}, ".item5 .text1": {"width": "49.33333vw", "height": "8.8vw", "top": "6.12777vh", "left": "16.66667vw"}, ".item5 .text2": {"width": "49.33333vw", "height": "16vw", "top": "12.05997vh", "left": "36.53333vw"}, ".item5 .zhuazi": {"width": "7.86667vw", "height": "7.46667vw", "top": "14.34159vh", "left": "26.93333vw"}, ".item6 .text1": {"width": "62.66667vw", "height": "8.8vw", "top": "6.12777vh", "left": "8.66667vw"}, ".item6 .text2": {"width": "71.73333vw", "height": "16vw", "top": "11.73403vh", "left": "17.46667vw"}, ".item6 .zhuazi": {"width": "7.86667vw", "height": "7.46667vw", "top": "5.60626vh", "left": "76.8vw"}, ".item7 .text1": {"width": "68vw", "height": "8.8vw", "top": "6.12777vh", "left": "8.66667vw"}, ".item7 .text2": {"width": "91.46667vw", "height": "10vw", "top": "11.73403vh", "left": "2.13333vw"}, ".item8 .p": {"font-size": ["4.8vw", "!important"], "margin-bottom": ["3.78096vh", "!important"]}, ".item8 .text1": {"top": "15.31943vh"}, ".item8 .logo": {"width": "72vw", "height": "14.99348vh"}, ".item8 .intro": {"margin-top": "5.3455vh"}, ".item9 .p:first-of-type": {"margin-left": "7.46667vw"}, ".item9 .text1": {"top": "11.08214vh"}, ".item9 .logo": {"width": "32vw", "height": "15.64537vh"}, ".item9 .intro": {"margin-top": "5.86701vh"}, ".item10 .p:first-of-type": {"margin-left": "7.46667vw"}, ".item10 .text1": {"top": "11.08214vh"}, ".item10 .logo": {"width": "32vw", "height": "15.64537vh"}, ".item10 .intro": {"margin-top": "5.86701vh"}, ".item11 .p:first-of-type": {"margin-left": "7.46667vw"}, ".item11 .text1": {"top": "11.08214vh"}, ".item11 .logo": {"width": "32vw", "height": "15.64537vh"}, ".item11 .intro": {"margin-top": "5.86701vh"}, ".item12 .p": {"padding-left": "7.2vw", "padding-right": "7.2vw"}, ".item12 .intro1": {"margin-top": "10.82138vh"}, ".item12 .intro2": {"margin-top": "9.77836vh"}, ".item12 .logos": {"margin-top": "6.84485vh"}, ".item12 .logo1": {"width": "93.33333vw", "height": "22.16428vh", "left": "3.33333vw", "top": 0, "margin-top": "-4vw", "font-size": "normal"}, ".item12 .logo2": {"width": "28.4vw", "height": "7.82269vh", "left": "58.4vw"}, ".item13 .p": {"padding-left": "7.2vw", "padding-right": "7.2vw", "margin-bottom": "2.60756vh"}, ".item13 .intro1": {"margin-top": "9.97392vh"}, ".item13 .btn": {"width": "40.8vw", "height": "11.06667vw", "font-size": "5.33333vw", "border-radius": "2.66667vw", "margin-top": "6.64928vh"}, ".item14 .p": {"padding-left": "12.13333vw", "padding-right": "12.13333vw", "margin-bottom": "4.49804vh"}, ".item14 .intro1": {"margin-top": "13.103vh"}, ".item14 input": {"height": "10.66667vw", "line-height": "10.66667vw", "font-size": "4.4vw", "padding": "2.66667vw", "border-radius": "2.66667vw"}, ".item14 textarea": {"height": "29.33333vw", "line-height": "8vw", "font-size": "4.4vw", "padding": "2.66667vw", "border-radius": "2.66667vw"}, ".item14 .btn": {"width": "40.8vw", "height": "11.06667vw", "font-size": "5.33333vw", "border-radius": "2.66667vw", "margin-top": "8.86571vh"}}'; } }
 
 
 

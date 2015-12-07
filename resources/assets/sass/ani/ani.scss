@@ -233,6 +233,7 @@ $color: #ea9a00;
         .logo2 {
             width: 100%;
             @include con-bg("2", "2_21.png");
+            background-position: top left;
         }
         .text1 {
             @include con-bg("2", "2-zi-1.png");
@@ -257,10 +258,22 @@ $color: #ea9a00;
             width: 100%;
             @include con-bg("3", "3_02.png");
             background-position: top left;
+            max-width: 300px;
         }
         .logo2 {
             width: 100%;
             @include con-bg("3", "3_14.png");
+            max-width: 320px;
+        }
+        .intro1 {
+            .center-block__item {
+                margin-left: 0;
+            }
+        }
+        .intro3 {
+            .center-block__item {
+                background-position: 0 0;
+            }
         }
         .text1 {
             @include con-bg("3", "3_06.png");
@@ -281,9 +294,11 @@ $color: #ea9a00;
     .item4 {
         .logo1 {
             @include con-bg("4", "4_03.png");
+            background-position: top left;
         }
         .logo2 {
             @include con-bg("4", "4_15.png");
+            background-position: top left;
         }
         .text1 {
             @include con-bg("4", "4_07.png");
@@ -370,8 +385,8 @@ $color: #ea9a00;
         .logo1 {
             position: absolute;
             top: 0;
-            @include con-bg("12", "12_03.png");
-            background-position: center bottom;
+            @include con-bg("12", "111111_03.png");
+            background-position: center top;
         }
         .logo2 {
             position: absolute;
@@ -401,6 +416,7 @@ $color: #ea9a00;
             width: 100%;
             background-color: transparent;
             border: 1px solid $color;
+            color: $color;
             &::-webkit-input-placeholder {
                 color: $color;
             }
@@ -409,6 +425,7 @@ $color: #ea9a00;
             width: 100%;
             background-color: transparent;
             border: 1px solid $color;
+            color: $color;
             &::-webkit-input-placeholder {
                 color: $color;
             }
@@ -428,7 +445,7 @@ $color: #ea9a00;
     }
 }
 
-//@include setDebug(13);
+@include setDebug(14);
 
 $polyfill: () !global;
 
@@ -514,13 +531,13 @@ $polyfill: () !global;
         .intro1 {
             @include easy-set((
                     height: vw(450),
-                    margin-top: vw(58)
+                    margin-top: vw(45)
             ));
         }
         .intro2 {
             @include easy-set((
                     height: vw(174),
-                    margin-top: vw(44)
+                    margin-top: vw(30)
             ));
         }
         .intro3 {
@@ -531,14 +548,14 @@ $polyfill: () !global;
         }
         .logo1 {
             @include easy-set((
-                    width: vw(450),
-                    height: vw(450)
+                    width: vw(420),
+                    height: vw(400)
             ));
         }
         .logo2 {
             @include easy-set((
-                    width: vw(450),
-                    height: vw(450)
+                    width: vw(420),
+                    height: vw(400)
             ));
         }
         .text1 {
@@ -546,7 +563,7 @@ $polyfill: () !global;
                     width: vw(392),
                     height: vw(55),
                     left: vw(95),
-                    top: vw(547)
+                    top: vw(507)
             ));
         }
         .text2 {
@@ -554,7 +571,7 @@ $polyfill: () !global;
                     width: vw(424),
                     height: vw(60),
                     left: vw(227),
-                    top: vw(607)
+                    top: vw(557)
             ));
         }
         .zhuazi1 {
@@ -562,7 +579,7 @@ $polyfill: () !global;
                     width: vw(58),
                     height: vw(50),
                     left: vw(29),
-                    top: vw(556)
+                    top: vw(515)
             ));
         }
         .zhuazi2 {
@@ -570,7 +587,7 @@ $polyfill: () !global;
                     width: vw(58),
                     height: vw(50),
                     left: vw(632),
-                    top: vw(613)
+                    top: vw(573)
             ));
         }
         .line {
@@ -578,14 +595,14 @@ $polyfill: () !global;
                     width: vw(694),
                     height: vw(79),
                     left: vw(31),
-                    top: vw(652)
-            ));
+                    top: vw(612)
+            ))
         }
     }
     .item3 {
         .intro1 {
             @include easy-set((
-                    height: vw(450),
+                    height: vw(410),
                     margin-top: vw(58)
             ));
         }
@@ -597,8 +614,8 @@ $polyfill: () !global;
         }
         .intro3 {
             @include easy-set((
-                    height: vw(450),
-                    margin-top: vw(12)
+                    height: vw(410),
+                    margin-top: vw(60)
             ));
         }
         .logo1 {
@@ -616,7 +633,7 @@ $polyfill: () !global;
                     width: vw(392),
                     height: vw(55),
                     left: vw(95),
-                    top: vw(597)
+                    top: vw(517)
             ));
         }
         .text2 {
@@ -624,7 +641,7 @@ $polyfill: () !global;
                     width: vw(424),
                     height: vw(60),
                     left: vw(227),
-                    top: vw(657)
+                    top: vw(577)
             ));
         }
         .zhuazi1 {
@@ -632,7 +649,7 @@ $polyfill: () !global;
                     width: vw(58),
                     height: vw(50),
                     left: vw(29),
-                    top: vw(606)
+                    top: vw(525)
             ));
         }
         .zhuazi2 {
@@ -640,7 +657,7 @@ $polyfill: () !global;
                     width: vw(58),
                     height: vw(50),
                     left: vw(672),
-                    top: vw(663)
+                    top: vw(573)
             ));
         }
         .line {
@@ -648,7 +665,7 @@ $polyfill: () !global;
                     width: vw(694),
                     height: vw(79),
                     left: vw(31),
-                    top: vw(702)
+                    top: vw(639)
             ));
         }
     }
@@ -662,25 +679,25 @@ $polyfill: () !global;
         .intro2 {
             @include easy-set((
                     height: vw(174),
-                    margin-top: vw(44)
+                    margin-top: vw(20)
             ));
         }
         .intro3 {
             @include easy-set((
                     height: vw(450),
-                    margin-top: vw(12)
+                    margin-top: vw(3)
             ));
         }
         .logo1 {
             @include easy-set((
-                    width: vw(450),
-                    height: vw(450)
+                    width: vw(420),
+                    height: vw(400)
             ));
         }
         .logo2 {
             @include easy-set((
-                    width: vw(450),
-                    height: vw(450)
+                    width: vw(420),
+                    height: vw(400)
             ));
         }
         .text1 {
@@ -688,7 +705,7 @@ $polyfill: () !global;
                     width: vw(392),
                     height: vw(55),
                     left: vw(95),
-                    top: vw(547)
+                    top: vw(507)
             ));
         }
         .text2 {
@@ -696,7 +713,7 @@ $polyfill: () !global;
                     width: vw(424),
                     height: vw(60),
                     left: vw(227),
-                    top: vw(607)
+                    top: vw(567)
             ));
         }
         .zhuazi1 {
@@ -704,7 +721,7 @@ $polyfill: () !global;
                     width: vw(58),
                     height: vw(50),
                     left: vw(29),
-                    top: vw(556)
+                    top: vw(516)
             ));
         }
         .zhuazi2 {
@@ -712,7 +729,7 @@ $polyfill: () !global;
                     width: vw(58),
                     height: vw(50),
                     left: vw(672),
-                    top: vw(613)
+                    top: vw(573)
             ));
         }
         .line {
@@ -720,7 +737,7 @@ $polyfill: () !global;
                     width: vw(694),
                     height: vw(79),
                     left: vw(31),
-                    top: vw(652)
+                    top: vw(612)
             ));
         }
     }
@@ -905,24 +922,27 @@ $polyfill: () !global;
         }
         .intro1 {
             @include easy-set((
-                margin-top: vh(136)
+                margin-top: vh(166)
             ));
         }
         .intro2 {
             @include easy-set((
-                margin-top: vh(128)
+                margin-top: vh(150)
             ));
         }
         .logos {
             @include easy-set((
-                margin-top: vh(116)
+                margin-top: vh(105)
             ));
         }
         .logo1 {
             @include easy-set((
-                width: vw(213),
-                height: vh(120),
-                left: vw(83)
+                width: vw(700),
+                height: vh(340),
+                left: vw(25),
+                top: 0,
+                margin-top: vw(-30),
+                font-size: normal
             ))
         }
         .logo2 {
